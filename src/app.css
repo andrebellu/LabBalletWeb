@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+	themes: all;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  @apply m-0 p-0;
+}
+
+.background {
+  @apply absolute inset-0 bg-[url('bg.svg')] bg-cover bg-center bg-no-repeat blur-xs opacity-90;
+  z-index: -1;
+}
+
+
+.overlay {
+  @apply absolute inset-0 bg-black opacity-60;
+  z-index: -1;
+}
+
+.navlink {
+  @apply hover:scale-125 ease-in-out transform duration-300;
+}
+
+.navlink a:hover {
+  @apply text-red-800;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
