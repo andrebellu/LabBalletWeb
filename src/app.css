@@ -33,3 +33,7 @@ html, body {
 .text-shadow {
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
+
+.menu a{
+  @apply md:text-white hover:text-red-500 font-bold text-black;
+}

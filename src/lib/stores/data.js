@@ -1,17 +1,108 @@
 import { writable } from 'svelte/store';
 
 export const corsi = writable([
-  { title: "Danza Classica", description: "..." , photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C254076.jpg" },
-    { title: "Danza Moderna", description: "..." , photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253442.jpg" },
-    { title: "Heels", description: "..." , photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253088.jpg" },
-    { title: "Gioco Danza", description: "..." , photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253860.jpg" },
-    { title: "Pilates", description: "..." , photo: "" },
-    { title: "Pilates Bar", description: "..." , photo: "" },
+  {
+    title: "Danza Classica",
+    description: `
+      <p class="pb-4">Scopri l’eleganza e la disciplina della <strong>danza classica</strong>, dove tecnica e grazia si fondono con passione, sorrisi e dedizione. I nostri corsi sono pensati per accompagnare ogni allievo nel proprio percorso di crescita artistica, dai primi passi fino al perfezionamento.</p>
+
+      <p><strong>Corsi suddivisi per fasce d'età:</strong></p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Classica 1</strong> (1ª–3ª elementare): Mercoledì alle 17:30</li>
+        <li><strong>Classica 2</strong> (4ª–5ª elementare e 1ª media): Lunedì e Venerdì alle 17:00</li>
+        <li><strong>Classica 3</strong> (2ª–3ª media e 1ª superiore): Lunedì e Venerdì alle 20:00</li>
+        <li><strong>Classica 4</strong> (dalla 2ª superiore): Martedì e Giovedì alle 18:45</li>
+      </ul>
+    `,
+    photo: "http://www.mybabyphoto.it/LaBallet/20240601_ci_vediamo_in_tv/photos/_MBP9292.jpg",
+    type: "danza",
+  },
+  {
+    title: "Danza Moderna",
+    description: `
+      <p class="pb-4">Nei nostri corsi di <strong>danza moderna</strong>, tecnica ed energia si uniscono per dare vita a emozioni in movimento. Ogni allievo potrà esprimersi liberamente, crescendo con passione e divertimento.</p>
+
+      <p><strong>Corsi suddivisi per fasce d'età:</strong></p>
+      <ul class="list-disc list-inside space-y-1">
+        <li><strong>Mini Moderna</strong> (1ª–3ª elementare): Mercoledì alle 18:30</li>
+        <li><strong>Moderna 2</strong> (4ª–5ª elementare e 1ª media): Lunedì e Venerdì alle 18:00</li>
+        <li><strong>Moderna 3</strong> (2ª–3ª media e 1ª superiore): Lunedì e Venerdì alle 19:00</li>
+        <li><strong>Moderna 4</strong> (dalla 2ª superiore): Martedì e Giovedì alle 17:30</li>
+      </ul>
+    `,
+    photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253762.jpg",
+    type: "danza",
+  },
+  {
+    title: "Heels",
+    description: `
+      <p class="pb-4">Un meraviglioso <strong>stage di Heels</strong> dove sensualità e femminilità si incontrano con il divertimento.</p>
+      <p>Lo stage si svolge <strong>un sabato al mese</strong>. Seguici sui nostri social per restare aggiornato su date e orari!</p>
+    `,
+    photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253088.jpg",
+    type: "stage",
+  },
+  {
+    title: "GiocoDanza®",
+    description: `
+      <p class="pb-4">Un corso pensato per i più piccini, per avvicinarsi alla danza <strong>giocando e sorridendo</strong>, sviluppando coordinazione e fantasia.</p>
+      <p><strong>Orari:</strong><br>Lunedì alle 16:30<br>Mercoledì alle 16:30</p>
+    `,
+    photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253383.jpg",
+    type: "danza",
+  },
+  {
+    title: "Danza Accademica",
+    description: `
+      <p class="pb-4">La meraviglia di imparare l'arte della danza classica con il sorriso. Un’esperienza unica con il docente <strong>Matteo Corbetta</strong> dell’Accademia AbT.</p>
+      <p>Stage con <strong>cadenza mensile</strong>. Seguici sui social per rimanere aggiornato su <strong>date e orari</strong>.</p>
+    `,
+    photo: "",
+    type: "stage",
+  },
+  {
+    title: "Teatro Danza",
+    description: `
+      <p class="pb-4">Un corso in cui ognuno è protagonista, dove si esprimono emozioni attraverso la danza e il teatro.</p>
+      <p>Con il nostro caro amico e docente <strong>Davide Manico</strong>, vivrai un bellissimo viaggio dentro te stesso.</p>
+      <p>Stage con <strong>cadenza mensile</strong>. Seguici sui social per rimanere aggiornato su <strong>date e orari</strong>.</p>
+    `,
+    photo: "",
+    type: "stage",
+  },
+  {
+    title: "Body Tonic",
+    description: `
+      <p class="pb-4"><strong>Movimento ed esercizi mirati alla tonificazione</strong>, uniti a musica e sorrisi per sentirsi bene con sé stessi.</p>
+      <p>Non è magia, è Body Tonic!<br><strong>Giovedì alle 20:00</strong></p>
+    `,
+    photo: "",
+    type: "fitness",
+  },
+  {
+    title: "Pilates Miofasciale Posturale",
+    description: `
+      <p class="pb-4">Un allenamento che unisce <strong>potenziamento, mobilità e benessere posturale</strong>.</p>
+      <p><strong>Orari:</strong><br>Lunedì alle 9:30<br>Martedì alle 20:00</p>
+    `,
+    photo: "",
+    type: "fitness",
+  },
+  {
+    title: "Pilates Barre",
+    description: `
+      <p class="pb-4">Il Pilates incontra la danza per migliorare <strong>elasticità, equilibrio e postura</strong>, con movimenti fluidi ed eleganti.</p>
+      <p><strong>Mercoledì alle 20:00</strong></p>
+    `,
+    photo: "",
+    type: "fitness",
+  },
 ]);
 
 export const insegnanti = writable([
-  { name: "Giovanna Staffoni", danceType: "...", description: "...", photo: "http://www.mybabyphoto.it/LaBallet/20240601_ci_vediamo_in_tv/photos/_MBP0665.jpg" },
-    { name: "Linda Stefanoni", bio: "..." , description: "...", photo: "http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C254488.jpg" },
-    { name: "Margherita Feroldi", bio: "..." , description: "...", photo: "..." },
-    { name: "Myriam Zinco", bio: "..." , description: "...", photo: "my.png" },
+  { name: "Giovanna Staffoni", description: "Direttrice artistica e insegnante dei corsi", photo: "http://www.mybabyphoto.it/LaBallet/20240601_ci_vediamo_in_tv/photos/_MBP0692.jpg" },
+    { name: "Linda Stefanoni" , description: "Insegnante di propedeutica, classica, moderna e pilates barre", photo: "http://www.mybabyphoto.it/LaBallet/20240601_ci_vediamo_in_tv/photos/_MBP9618.jpg" },
+    { name: "Margherita Feroldi", description: "Insegnante di danza classica, moderna e body tonic", photo: "mf.png" },
+    { name: "Myriam Zinco", description: "Assistente all'insegnamento della danza" , photo: "my.png" },
+    { name: "Daniela Carlotti" , description: "Insegnante di pilates miiofasciale posturale", photo: "" },
 ]);

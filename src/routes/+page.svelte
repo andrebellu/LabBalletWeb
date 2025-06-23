@@ -11,7 +11,7 @@
 
 <div class="background"></div>
 
-<!--<Navbar />-->
+<Navbar />
 <Hero />
 <div class="corsi-section py-24 px-4" id="corsi">
   <div class="max-w-7xl mx-auto">
@@ -19,16 +19,43 @@
     <p class="text-center mb-12">
       Scopri i nostri corsi di danza, adatti a tutti i livelli e stili.
     </p>
-    <div
-      class="corsi grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10 max-w-6xl mx-auto justify-center items-center"
-    >
-      {#each $corsi as corso}
-        <CorsoCard
-          title={corso.title}
-          description={corso.description}
-          photo={corso.photo}
-        />
-      {/each}
+
+    <div class="flex flex-col lg:flex-row gap-12">
+      <!-- Danza -->
+      <div class="w-full lg:w-1/2">
+        <h3 class="text-2xl font-semibold mb-6 text-center">Corsi di danza</h3>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-3 gap-10 justify-items-center"
+        >
+          {#each $corsi as corso}
+            {#if corso.type === "danza"}
+              <CorsoCard
+                title={corso.title}
+                description={corso.description}
+                photo={corso.photo}
+              />
+            {/if}
+          {/each}
+        </div>
+      </div>
+
+      <!-- Fitness -->
+      <div class="w-full lg:w-1/2">
+        <h3 class="text-2xl font-semibold mb-6 text-center">
+          Corsi di fitness
+        </h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 justify-items-center">
+          {#each $corsi as corso}
+            {#if corso.type === "fitness"}
+              <CorsoCard
+                title={corso.title}
+                description={corso.description}
+                photo={corso.photo}
+              />
+            {/if}
+          {/each}
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -39,12 +66,11 @@
     Conosci i nostri insegnanti, esperti in vari stili di danza.
   </p>
   <div
-    class="insegnanti grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    class="insegnanti flex flex-row gap-6 overflow-x-auto px-4 scroll-snap-x scroll-smooth md:flex-wrap md:justify-center md:overflow-x-visible"
   >
     {#each $insegnanti as insegnante}
       <InsegnantiCard
         name={insegnante.name}
-        danceType={insegnante.danceType}
         description={insegnante.description}
         photo={insegnante.photo}
       />
