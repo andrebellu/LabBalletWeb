@@ -32,6 +32,8 @@
       alt={title}
       class="rounded-lg mb-4 w-full h-48 object-cover"
     />
-    <p class="text-gray-700 text-base">{@html description}</p>
+    <p class="text-sm text-gray-600 mt-1 line-clamp-2 overflow-hidden">
+      {description}
+    </p>
   </div>
 </dialog>

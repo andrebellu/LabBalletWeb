@@ -12,7 +12,21 @@
     class="navbar-center absolute left-1/2 transform -translate-x-1/2 hidden lg:flex"
   >
     <ul class="menu menu-horizontal px-1 gap-4">
-      <li><a href="#corsi" class="hover:text-accent">Corsi</a></li>
+      <!-- Dropdown Corsi -->
+      <li>
+        <details>
+          <summary class="text-white font-bold hover:text-red-500"
+            >Corsi</summary
+          >
+          <ul class="bg-base-100 p-2 z-50">
+            <li class="hover:text-red-500"><a class="!text-black">Danza</a></li>
+            <li class="hover:text-red-500">
+              <a class="!text-black">Fitness</a>
+            </li>
+          </ul>
+        </details>
+      </li>
+
       <li><a href="#insegnanti" class="hover:text-accent">Insegnanti</a></li>
       <li><a href="#contatti" class="hover:text-accent">Contatti</a></li>
       <li><a href="#galleria" class="hover:text-accent">Galleria</a></li>
@@ -41,7 +55,14 @@
       <ul
         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
       >
-        <li><a href="#corsi">Corsi</a></li>
+        <!-- Dropdown Corsi per mobile -->
+        <li>
+          <a>Corsi</a>
+          <ul class="p-2">
+            <li><a href="#danza">Danza</a></li>
+            <li><a href="#fitness">Fitness</a></li>
+          </ul>
+        </li>
         <li><a href="#insegnanti">Insegnanti</a></li>
         <li><a href="#contatti">Contatti</a></li>
         <li><a href="#galleria">Galleria</a></li>

@@ -5,8 +5,11 @@ import daisyui from 'daisyui';
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
-  },
+  extend: {},
+    fontFamily: {
+      pfd: ['Playfair Display', 'serif'],
+    },
+},
   plugins: [daisyui],
   daisyui: {
     themes: [

@@ -10,13 +10,6 @@ html {
 html, body {
   @apply m-0 p-0;
 }
-
-.background {
-  @apply absolute inset-0 bg-[url('bg.svg')] bg-cover bg-center bg-no-repeat blur-xs opacity-90;
-  z-index: -1;
-}
-
-
 .overlay {
   @apply absolute inset-0 bg-black opacity-60;
   z-index: -1;
