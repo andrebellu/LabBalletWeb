@@ -1,24 +1,45 @@
 import { supabase } from '$lib/supabaseClient';
 
-export async function load() {
-  const [corsiRes, insegnantiRes] = await Promise.all([
-    supabase.from('Corsi').select('*').eq("type", "stage"),
+const CACHE_TTL = 60;
+
+export async function load({ cookies }) {
+  // Controlla prima i cookie
+  const cachedInsegnanti = cookies.get('insegnanti_cache');
+
+  if (cachedInsegnanti) {
+    try {
+      return {
+        insegnanti: JSON.parse(cachedInsegnanti),
+        cached: true
+      };
+    } catch (e) {
+      console.error('Error parsing cached data', e);
+    }
+  }
+
+  // Fetch da Supabase
+  const [insegnantiRes] = await Promise.all([
     supabase.from('Insegnanti').select('*')
   ]);
 
-  const errors = [corsiRes.error, insegnantiRes.error].filter(Boolean);
-  console.log('Corsi:', corsiRes.data);
-  console.log('Insegnanti:', insegnantiRes.data);
-  if (errors.length > 0) {
-    console.error('Errore Supabase:', errors);
+  if (insegnantiRes.error) {
+    console.error('Supabase error:', insegnantiRes.error);
     return {
       corsi: [],
-      insegnanti: [],
+      insegnanti: []
     };
   }
 
+  cookies.set('insegnanti_cache', JSON.stringify(insegnantiRes.data), {
+    path: '/',
+    maxAge: CACHE_TTL * 60,
+    httpOnly: true,
+    secure: process.env.NODE_ENV === 'production',
+    sameSite: 'lax'
+  });
+
   return {
-    corsi: corsiRes.data ?? [],
-    insegnanti: insegnantiRes.data ?? [],
+    insegnanti: insegnantiRes.data,
+    cached: false
   };
 }
