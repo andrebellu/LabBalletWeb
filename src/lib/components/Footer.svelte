@@ -73,6 +73,7 @@
                     >
                         <i class="fab fa-instagram"></i>
                     </a>
+                    <!--
                     <a
                         href="https://www.youtube.com/"
                         class="hover:text-accent"
@@ -82,6 +83,7 @@
                     >
                         <i class="fab fa-youtube"></i>
                     </a>
+                    -->
                 </div>
             </div>
         </div>
@@ -92,7 +94,9 @@
         <div
             class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center gap-2"
         >
-            <p>&copy; 2025 LAB Ballet. Tutti i diritti riservati.</p>
+            <p>
+                &copy; {new Date().getFullYear()} LAB Ballet. Tutti i diritti riservati.
+            </p>
             <p class="opacity-80">
                 Sito creato da <a
                     href="https://github.com/andrebellu"

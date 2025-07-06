@@ -15,7 +15,7 @@
             <li>
                 <details>
                     <summary class="text-white font-bold hover:text-red-500"
-                        >Corsi</summary
+                        ><a href="/#corsi">Corsi</a></summary
                     >
                     <ul class="bg-base-100 p-2 z-50">
                         <li class="hover:text-red-500">
@@ -31,14 +31,14 @@
             <li>
                 <a href="/#insegnanti" class="hover:text-accent">Insegnanti</a>
             </li>
-            <li><a href="#galleria" class="hover:text-accent">Galleria</a></li>
+            <li><a href="/galleria" class="hover:text-accent">Galleria</a></li>
         </ul>
     </div>
 
     <!-- HAMBURGER a destra solo su mobile -->
     <div class="navbar-end lg:hidden">
         <div class="dropdown dropdown-end">
-            <label class="btn btn-ghost" aria-label="Apri menu">
+            <label tabindex="0" class="btn btn-ghost">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5 -scale-x-100"
@@ -59,14 +59,14 @@
             >
                 <!-- Dropdown Corsi per mobile -->
                 <li>
-                    <a>Corsi</a>
+                    <a href="/#corsi">Corsi</a>
                     <ul class="p-2">
-                        <li><a href="#danza">Danza</a></li>
-                        <li><a href="#fitness">Fitness</a></li>
+                        <li><a href="/danza">Danza</a></li>
+                        <li><a href="/fitness">Fitness</a></li>
                     </ul>
                 </li>
                 <li><a href="/#insegnanti">Insegnanti</a></li>
-                <li><a href="#galleria">Galleria</a></li>
+                <li><a href="/galleria">Galleria</a></li>
             </ul>
         </div>
     </div>

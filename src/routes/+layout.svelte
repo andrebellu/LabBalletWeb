@@ -6,7 +6,7 @@
 
 <div class="min-h-screen">
     <Navbar />
-    <main class:pt-16={$page.url.pathname !== "/"}>
+    <main class:pt-24={$page.url.pathname !== "/"}>
         <slot />
     </main>
 </div>
