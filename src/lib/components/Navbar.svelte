@@ -1,12 +1,20 @@
 <script>
-    document.addEventListener("click", function (event) {
-        const dropdown = document.getElementById("dropdown-corsi");
-        const isClickInside = dropdown.contains(event.target);
+    import { onMount } from "svelte";
 
-        // Se clicchi fuori dal <details> e il menu è aperto, chiudilo
-        if (!isClickInside && dropdown.hasAttribute("open")) {
-            dropdown.removeAttribute("open");
-        }
+    let dropdown;
+
+    onMount(() => {
+        const handleClickOutside = (event) => {
+            if (dropdown && !dropdown.contains(event.target) && dropdown.open) {
+                dropdown.open = false;
+            }
+        };
+
+        window.addEventListener("click", handleClickOutside);
+
+        return () => {
+            window.removeEventListener("click", handleClickOutside);
+        };
     });
 </script>
 
@@ -25,10 +33,10 @@
     >
         <ul class="menu menu-horizontal px-1 gap-4">
             <li>
-                <details id="dropdown-corsi">
-                    <summary class="text-white font-bold hover:text-red-500"
-                        ><a href="/#corsi">Corsi</a></summary
-                    >
+                <details bind:this={dropdown}>
+                    <summary class="text-white font-bold hover:text-red-500">
+                        <a href="/#corsi">Corsi</a>
+                    </summary>
                     <ul class="bg-base-100 p-2 z-50">
                         <li class="hover:text-red-500">
                             <a class="!text-black" href="/danza">Danza</a>
