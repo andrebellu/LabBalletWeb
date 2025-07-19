@@ -14,8 +14,13 @@
             (current - 1 + $carousel_links.length) % $carousel_links.length;
     };
 
+    const startInterval = () => {
+        clearInterval(interval);
+        interval = setInterval(next, 5000);
+    };
+
     onMount(() => {
-        interval = setInterval(next, 15000);
+        startInterval();
         return () => clearInterval(interval);
     });
 </script>
@@ -41,9 +46,8 @@
     <div class="absolute inset-0 z-20 flex items-center justify-between px-4">
         <button
             on:click|preventDefault={() => {
-                clearInterval(interval);
                 prev();
-                interval = setInterval(next, 3000);
+                startInterval();
             }}
             class="btn btn-circle bg-white/80 hover:bg-white"
         >
@@ -51,9 +55,8 @@
         </button>
         <button
             on:click|preventDefault={() => {
-                clearInterval(interval);
                 next();
-                interval = setInterval(next, 3000);
+                startInterval();
             }}
             class="btn btn-circle bg-white/80 hover:bg-white"
         >

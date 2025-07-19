@@ -6,6 +6,26 @@
     let modalImage = "";
     let currentIndex = 0;
 
+    let mounted = false; // usato per evitare errore SSR
+
+    onMount(() => {
+        mounted = true;
+        window.addEventListener("keydown", handleKeydown);
+        return () => {
+            window.removeEventListener("keydown", handleKeydown);
+            document.body.classList.remove("overflow-hidden");
+        };
+    });
+
+    // Reazione a showModal per gestire overflow
+    $: if (mounted) {
+        if (showModal) {
+            document.body.classList.add("overflow-hidden");
+        } else {
+            document.body.classList.remove("overflow-hidden");
+        }
+    }
+
     const openModal = (image, index) => {
         modalImage = image;
         currentIndex = index;
@@ -44,10 +64,29 @@
         if (event.key === "Escape") closeModal();
     };
 
-    onMount(() => {
-        window.addEventListener("keydown", handleKeydown);
-        return () => window.removeEventListener("keydown", handleKeydown);
-    });
+    // Touch gesture per swipe su mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleTouchStart = (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    };
+
+    const handleTouchEnd = (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    };
+
+    const handleSwipe = () => {
+        const diff = touchStartX - touchEndX;
+        const threshold = 50;
+
+        if (diff > threshold) {
+            showNext();
+        } else if (diff < -threshold) {
+            showPrev();
+        }
+    };
 </script>
 
 <!-- Galleria -->
@@ -101,7 +140,9 @@
             <img
                 src={modalImage}
                 alt="Ingrandita"
-                class="max-h-[80vh] max-w-full object-contain mx-auto"
+                class="max-h-[80vh] max-w-full object-contain mx-auto touch-pan-y"
+                on:touchstart={handleTouchStart}
+                on:touchend={handleTouchEnd}
             />
 
             <!-- Freccia sinistra -->
