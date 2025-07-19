@@ -49,6 +49,10 @@
             </li>
 
             <li>
+                <a href="/stage">Stage</a>
+            </li>
+
+            <li>
                 <a href="/#insegnanti" class="hover:text-accent">Insegnanti</a>
             </li>
             <li><a href="/galleria" class="hover:text-accent">Galleria</a></li>
@@ -85,6 +89,7 @@
                         <li><a href="/fitness">Fitness</a></li>
                     </ul>
                 </li>
+                <li><a href="/stage">Stage</a></li>
                 <li><a href="/#insegnanti">Insegnanti</a></li>
                 <li><a href="/galleria">Galleria</a></li>
             </ul>
