@@ -4,6 +4,7 @@
     import InsegnantiCard from "$lib/components/InsegnantiCard.svelte";
     import CorsiSections from "$lib/components/CorsiSections.svelte";
     import WhatsappPopup from "$lib/components/WhatsappPopup.svelte";
+    import Table from "$lib/components/Table.svelte";
 
     export let data;
 </script>
@@ -35,7 +36,10 @@
     </svg>
 </div>
 
-<div class="insegnanti-section pt-20 bg-base-200" id="insegnanti">
+<div
+    class="insegnanti-section pt-14 md:pt-32 pb-10 bg-base-200"
+    id="insegnanti"
+>
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
         I nostri Insegnanti
     </h2>
@@ -53,6 +57,27 @@
             />
         {/each}
     </div>
+</div>
+
+<div class="relative">
+    <svg
+        class="absolute top-0 left-0 w-full"
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+    >
+        <path
+            class="fill-[#dbdbdb]"
+            d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"
+        />
+    </svg>
+</div>
+
+<div class="table-section md:pt-20 py-10 md:px-36 px-8" id="orari">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-8">
+        I nostri Orari
+    </h2>
+    <p class="text-center mb-12">Scorri per vedere gli orari dei corsi.</p>
+    <Table />
 </div>
 
 <Footer />
