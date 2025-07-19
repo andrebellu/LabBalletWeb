@@ -1,3 +1,15 @@
+<script>
+    document.addEventListener("click", function (event) {
+        const dropdown = document.getElementById("dropdown-corsi");
+        const isClickInside = dropdown.contains(event.target);
+
+        // Se clicchi fuori dal <details> e il menu è aperto, chiudilo
+        if (!isClickInside && dropdown.hasAttribute("open")) {
+            dropdown.removeAttribute("open");
+        }
+    });
+</script>
+
 <div
     class="navbar fixed top-0 z-100 backdrop-blur-sm transition-all duration-300 bg-[rgba(121,125,133,0.1)] h-5 lg:h-24"
     id="navbar"
@@ -13,7 +25,7 @@
     >
         <ul class="menu menu-horizontal px-1 gap-4">
             <li>
-                <details>
+                <details id="dropdown-corsi">
                     <summary class="text-white font-bold hover:text-red-500"
                         ><a href="/#corsi">Corsi</a></summary
                     >
