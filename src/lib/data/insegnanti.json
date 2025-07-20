@@ -12,12 +12,12 @@
   {
     "name": "Margherita Feroldi",
     "description": "Insegnante di danza classica, moderna e body tonic",
-    "photo": "mf.webp"
+    "photo": "/images/mf.webp"
   },
   {
     "name": "Myriam Zinco",
     "description": "Assistente all'insegnamento della danza",
-    "photo": "my.webp"
+    "photo": "/images/my.webp"
   },
   {
     "name": "Daniela Carlotti",

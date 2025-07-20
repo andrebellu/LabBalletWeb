@@ -24,7 +24,11 @@
 >
   <div class="navbar-start">
     <a href="/">
-      <img src="logo.webp" alt="logo" class="w-18 lg:w-24 aspect-square p-4" />
+      <img
+        src="/images/logo.webp"
+        alt="logo"
+        class="w-18 lg:w-24 aspect-square p-4"
+      />
     </a>
   </div>
 
