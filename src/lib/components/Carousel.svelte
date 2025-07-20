@@ -40,26 +40,4 @@
       />
     </div>
   {/each}
-
-  <!-- Navigation buttons -->
-  <div class="absolute inset-0 z-20 flex items-center justify-between px-4">
-    <button
-      on:click|preventDefault={() => {
-        prev();
-        startInterval();
-      }}
-      class="btn btn-circle bg-white/80 hover:bg-white"
-    >
-      ❮
-    </button>
-    <button
-      on:click|preventDefault={() => {
-        next();
-        startInterval();
-      }}
-      class="btn btn-circle bg-white/80 hover:bg-white"
-    >
-      ❯
-    </button>
-  </div>
 </div>
