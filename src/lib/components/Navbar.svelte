@@ -19,7 +19,7 @@
 </script>
 
 <div
-  class="navbar fixed top-0 z-100 backdrop-blur-sm transition-all duration-300 bg-[rgba(121,125,133,0.1)] h-5 lg:h-24"
+  class="navbar fixed top-0 z-100 transition-all duration-300 h-5 lg:h-24"
   id="navbar"
 >
   <div class="navbar-start">

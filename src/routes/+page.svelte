@@ -7,9 +7,54 @@
   import Table from "$lib/components/Table.svelte";
 
   export let data;
+
+  import { onMount } from "svelte";
+
+  let dropdown;
+  let isHeroInView = true;
+
+  onMount(() => {
+    const heroSection = document.querySelector("#hero"); // Assicurati che Hero abbia questo ID
+    const navbar = document.getElementById("navbar");
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        isHeroInView = entry.isIntersecting;
+        if (navbar) {
+          if (isHeroInView) {
+            navbar.classList.remove("backdrop-blur-sm");
+            navbar.classList.remove("bg-[rgba(121,125,133,0.1)]");
+          } else {
+            navbar.classList.add("backdrop-blur-sm");
+            navbar.classList.add("bg-[rgba(121,125,133,0.1)]");
+          }
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (heroSection) observer.observe(heroSection);
+
+    const handleClickOutside = (event) => {
+      if (dropdown && !dropdown.contains(event.target) && dropdown.open) {
+        dropdown.open = false;
+      }
+    };
+
+    window.addEventListener("click", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("click", handleClickOutside);
+      if (heroSection) observer.unobserve(heroSection);
+    };
+  });
 </script>
 
-<Hero />
+<section id="hero">
+  <Hero />
+</section>
 
 <WhatsappPopup />
 
