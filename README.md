@@ -1,4 +1,4 @@
-# Lab Ballet - Sito ufficiale
+# LabBallet - Sito ufficiale
 
 Sito web ufficiale della scuola di danza **LabBallet**, sviluppato con [Svelte](https://svelte.dev/), [Tailwind CSS](https://tailwindcss.com/) e [Vite](https://vitejs.dev/).
 
