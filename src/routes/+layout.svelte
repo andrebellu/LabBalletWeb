@@ -5,8 +5,13 @@
 </script>
 
 <div class="min-h-screen">
-  <Navbar />
-  <main class:pt-24={$page.url.pathname !== "/"}>
+  {#if $page.url.pathname !== "/privacy-policy"}
+    <Navbar />
+  {/if}
+  <main
+    class:pt-24={$page.url.pathname !== "/" &&
+      $page.url.pathname !== "/privacy-policy"}
+  >
     <slot />
   </main>
 </div>
