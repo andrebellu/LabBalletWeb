@@ -1,39 +1,50 @@
-# sv
+# Lab Ballet - Sito ufficiale
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Sito web ufficiale della scuola di danza **LabBallet**, sviluppato con [Svelte](https://svelte.dev/), [Tailwind CSS](https://tailwindcss.com/) e [Vite](https://vitejs.dev/).
 
-## Creating a project
+## Struttura del progetto
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+```
+LabBalletWeb/
+├── src/              # Codice sorgente Svelte
+│   ├── routes/       # Pagine del sito
+│   ├── lib/          # Componenti riutilizzabili
+│   └── app.html      # Entry point
+├── static/           # File statici (immagini, favicon, ecc.)
+├── tailwind.config.cjs
+├── svelte.config.js
+├── vite.config.js
+├── package.json
+└── README.md
 ```
 
-## Developing
+## Come avviare il progetto in locale
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+### 1. Clona la repository
 
 ```bash
-npm run build
+git clone https://github.com/andrebellu/LabBalletWeb.git
+cd LabBalletWeb
 ```
 
-You can preview the production build with `npm run preview`.
+### 2. Installa le dipendenze
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-# LabBalletWeb
+```bash
+yarn install
+```
+
+### 3. Avvia il server di sviluppo
+
+```bash
+yarn dev
+```
+
+Il sito sarà accessibile su `http://localhost:5173`.
+
+## Tecnologie usate
+
+- **[Svelte](https://svelte.dev/)** – Framework JavaScript reattivo e leggero
+- **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS framework
+  - **[DaisyUI](https://daisyui.com/)** – Componenti UI per Tailwind
+- **[Vite](https://vitejs.dev/)** – Build tool e dev server ultra-veloce
+- **Yarn** – Gestore di pacchetti
