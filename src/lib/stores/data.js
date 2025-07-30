@@ -13,3 +13,8 @@ export let carousel_links = writable([
 ]);
 
 
+export const gallery_links = readable([
+
+]);
+
+
