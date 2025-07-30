@@ -6,9 +6,12 @@
 <div class="flex flex-col lg:flex-row-reverse">
     <div class="w-full lg:w-1/2">
         <img
-            src="/images/corsi/corso_sp.webp"
+            src="/images/corsi/classico.webp"
             alt="Danza"
-            class="w-full h-full max-h-[500px] object-cover"
+            class="w-full h-full max-h-[300px] md:max-h-[500px] object-cover"
+            width="400"
+            height="300"
+            loading="lazy"
         />
     </div>
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8">
@@ -34,7 +37,10 @@
         <img
             src="https://images.unsplash.com/photo-1591258370814-01609b341790?q=80&w=1080&auto=format&fit=crop"
             alt="Fitness"
-            class="w-full h-full max-h-[500px] object-cover"
+            class="w-full h-full max-h-[300px] md:max-h-[500px] object-cover"
+            width="400"
+            height="300"
+            loading="lazy"
         />
     </div>
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8">
@@ -60,7 +66,10 @@
         <img
             src="/images/corsi/tacchi.webp"
             alt="Stage"
-            class="w-full h-full max-h-[500px] object-cover"
+            class="w-full h-full max-h-[300px] md:max-h-[500px] object-cover"
+            width="400"
+            height="300"
+            loading="lazy"
         />
     </div>
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8">

@@ -38,9 +38,12 @@
         >
             <img
                 src={link}
-                alt="carousel image {index + 1}"
+                alt={`LabBallet - Immagine ${index + 1}`}
+                width="1920"
+                height="1080"
                 loading={index === 0 ? "eager" : "lazy"}
-                class="w-full h-full object-cover aspect-auto"
+                decoding={index === 0 ? "sync" : "async"}
+                class="w-full h-full object-cover"
             />
         </div>
     {/each}

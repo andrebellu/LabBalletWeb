@@ -12,7 +12,13 @@
             <div
                 class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
             >
-                <img src={photo} alt={name} class="object-cover scale-110" />
+                <img
+                    src={photo}
+                    alt={name}
+                    class="object-cover scale-110"
+                    height="100"
+                    width="100"
+                />
             </div>
         </div>
     </figure>
