@@ -245,7 +245,7 @@
             <tr>
                 <td class="border-r border-base-content/10">17:30</td>
                 <td class="border-r border-base-content/10"></td>
-                <td class="border-r border-base-content/10">Classica 4</td>
+                <td class="border-r border-base-content/10">Moderna 4</td>
                 <td class="border-r border-base-content/10">Classica 1</td>
                 <td class="border-r border-base-content/10">Moderna 4</td>
                 <td class="border-r border-base-content/10"></td>
@@ -269,7 +269,7 @@
             <tr>
                 <td class="border-r border-base-content/10">18:45</td>
                 <td class="border-r border-base-content/10"></td>
-                <td class="border-r border-base-content/10">Moderna 4</td>
+                <td class="border-r border-base-content/10">Classica 4</td>
                 <td class="border-r border-base-content/10"></td>
                 <td class="border-r border-base-content/10">Classica 4</td>
                 <td class="border-r border-base-content/10"></td>

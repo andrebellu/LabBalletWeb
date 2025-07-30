@@ -6,7 +6,7 @@
 <div class="flex flex-col lg:flex-row-reverse">
     <div class="w-full lg:w-1/2">
         <img
-            src="http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253762.jpg"
+            src="/images/corsi/corso_sp.webp"
             alt="Danza"
             class="w-full h-full max-h-[500px] object-cover"
         />
@@ -58,7 +58,7 @@
 <div class="flex flex-col lg:flex-row-reverse">
     <div class="w-full lg:w-1/2">
         <img
-            src="http://www.mybabyphoto.it/LaBallet/20250601_in_punta_di_fiaba/photos/_C253088.jpg"
+            src="/images/corsi/tacchi.webp"
             alt="Stage"
             class="w-full h-full max-h-[500px] object-cover"
         />

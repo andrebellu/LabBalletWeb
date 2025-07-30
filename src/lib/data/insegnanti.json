@@ -1,27 +1,32 @@
 [
-  {
-    "name": "Giovanna Staffoni",
-    "description": "Direttrice artistica e insegnante dei corsi",
-    "photo": "https://www.mybabyphoto.it/LaBallet/20240601_ci_vediamo_in_tv/photos/_MBP0692.jpg"
-  },
-  {
-    "name": "Linda Stefanoni",
-    "description": "Insegnante di propedeutica, classica, moderna e pilates barre",
-    "photo": "https://www.mybabyphoto.it/LaBallet/20240601_ci_vediamo_in_tv/photos/_MBP9618.jpg"
-  },
-  {
-    "name": "Margherita Feroldi",
-    "description": "Insegnante di danza classica, moderna e body tonic",
-    "photo": "/images/mf.webp"
-  },
-  {
-    "name": "Myriam Zinco",
-    "description": "Assistente all'insegnamento della danza",
-    "photo": "/images/my.webp"
-  },
-  {
-    "name": "Daniela Carlotti",
-    "description": "Insegnante di pilates miiofasciale posturale",
-    "photo": "/images/dc.webp"
-  }
+    {
+        "name": "Giovanna Staffoni",
+        "description": "Direttrice artistica e insegnante dei corsi di danza classica, moderna e heels",
+        "photo": "/images/insegnanti/gs.webp"
+    },
+    {
+        "name": "Linda Stefanoni",
+        "description": "Insegnante di propedeutica, classica, moderna e pilates barre",
+        "photo": "/images/insegnanti/ls.webp"
+    },
+    {
+        "name": "Margherita Feroldi",
+        "description": "Insegnante di danza classica, moderna e body tonic",
+        "photo": "/images/insegnanti/mf.webp"
+    },
+    {
+        "name": "Lara Zanini",
+        "description": "Insegnante di danza classica, moderna e body tonic",
+        "photo": "/images/insegnanti/lz.webp"
+    },
+    {
+        "name": "Myriam Zinco",
+        "description": "Assistente all'insegnamento della danza",
+        "photo": "/images/insegnanti/my.webp"
+    },
+    {
+        "name": "Daniela Carlotti",
+        "description": "Insegnante di pilates miiofasciale posturale",
+        "photo": "/images/insegnanti/dc.webp"
+    }
 ]
