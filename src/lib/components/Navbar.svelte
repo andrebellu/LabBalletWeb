@@ -2,11 +2,20 @@
     import { onMount } from "svelte";
 
     let dropdown;
+    let mobileMenuToggle;
+    let isHovering = false;
+
+    const closeDropdown = () => {
+        if (!isHovering && dropdown) dropdown.open = false;
+        if (mobileMenuToggle) mobileMenuToggle.checked = false;
+    };
 
     onMount(() => {
+        mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+
         const handleClickOutside = (event) => {
             if (dropdown && !dropdown.contains(event.target) && dropdown.open) {
-                dropdown.open = false;
+                closeDropdown();
             }
         };
 
@@ -19,7 +28,7 @@
 </script>
 
 <nav
-    class="navbar fixed top-0 z-100 backdrop-blur-sm transition-all duration-300 bg-[rgba(23,24,26,0.38)] h-5 lg:h-24"
+    class="navbar fixed top-0 z-100 backdrop-blur-sm transition-all duration-300 bg-[rgba(23,24,26,0.1)] h-5 lg:h-24"
     id="navbar"
     aria-label="Menu principale"
 >
@@ -41,16 +50,48 @@
     >
         <ul class="menu menu-horizontal px-1 gap-4">
             <li>
-                <details bind:this={dropdown}>
-                    <summary class="text-white font-bold hover:text-red-500">
-                        <a href="/#corsi">Corsi</a>
+                <details
+                    bind:this={dropdown}
+                    on:mouseenter={() => {
+                        if (window.innerWidth >= 1024) {
+                            isHovering = true;
+                            dropdown.open = true;
+                        }
+                    }}
+                    on:mouseleave={() => {
+                        if (window.innerWidth >= 1024) {
+                            isHovering = false;
+                            setTimeout(closeDropdown, 300); // Ritardo per permettere il passaggio al dropdown
+                        }
+                    }}
+                >
+                    <summary
+                        class="text-white font-bold hover:text-red-500 cursor-pointer"
+                        on:click={closeDropdown}
+                    >
+                        Corsi
                     </summary>
-                    <ul class="bg-base-100 p-2 z-50">
+                    <ul
+                        class="bg-base-100 p-2 z-50"
+                        on:mouseenter={() => (isHovering = true)}
+                        on:mouseleave={() => {
+                            isHovering = false;
+                            setTimeout(closeDropdown, 300);
+                        }}
+                    >
                         <li class="hover:text-red-500">
-                            <a class="!text-black" href="/danza">Danza</a>
+                            <a
+                                class="!text-black"
+                                href="/danza"
+                                on:click={closeDropdown}>Danza</a
+                            >
                         </li>
                         <li class="hover:text-red-500">
-                            <a class="!text-black" href="/fitness">Fitness</a>
+                            <a
+                                class="!text-black"
+                                href="/fitness"
+                                on:click={closeDropdown}>Fitness</a
+                            >
                         </li>
                     </ul>
                 </details>
