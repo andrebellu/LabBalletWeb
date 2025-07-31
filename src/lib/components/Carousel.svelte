@@ -25,10 +25,10 @@
     });
 </script>
 
-<div class="relative w-full h-full overflow-hidden bg-gray-100">
+<div class="relative w-full h-full overflow-hidden bg-black">
     {#each $carousel_links as link, index}
         <div
-            class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out blur-xs"
+            class="absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out blur-xs m-0 p-0"
             style="opacity: {index === current ? 1 : 0}; z-index: {index ===
             current
                 ? 10
