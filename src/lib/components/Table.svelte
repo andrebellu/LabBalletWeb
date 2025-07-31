@@ -37,9 +37,15 @@
                         <span class="font-medium">19:00</span>
                         <span>Moderna 3</span>
                     </div>
-                    <div class="flex justify-between">
+                    <div
+                        class="flex justify-between border-b border-base-200 pb-1"
+                    >
                         <span class="font-medium">20:00</span>
                         <span>Classica 3</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-medium">21:00</span>
+                        <span>Danza Adulti Principianti (Classico)</span>
                     </div>
                 </div>
             </div>
@@ -101,9 +107,15 @@
                         <span class="font-medium">18:30</span>
                         <span>Mini Mod.</span>
                     </div>
-                    <div class="flex justify-between">
+                    <div
+                        class="flex justify-between border-b border-base-200 pb-1"
+                    >
                         <span class="font-medium">20:00</span>
                         <span>Pilates Barre</span>
+                    </div>
+                    <div class="flex justify-between">
+                        <span class="font-medium">21:00</span>
+                        <span>Danza Adulti Principianti (Moderno)</span>
                     </div>
                 </div>
             </div>
@@ -291,6 +303,18 @@
                 <td class="border-r border-base-content/10">Pilates Barre</td>
                 <td class="border-r border-base-content/10">Body Tonic</td>
                 <td class="border-r border-base-content/10">Classica 3</td>
+            </tr>
+            <tr>
+                <td class="border-r border-base-content/10">21:00</td>
+                <td class="border-r border-base-content/10"
+                    >Classica adulti principianti</td
+                >
+                <td class="border-r border-base-content/10"></td>
+                <td class="border-r border-base-content/10"
+                    >Moderna adulti principianti</td
+                >
+                <td class="border-r border-base-content/10"></td>
+                <td class="border-r border-base-content/10"></td>
             </tr>
         </tbody>
     </table>
