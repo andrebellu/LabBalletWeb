@@ -28,7 +28,7 @@
 </script>
 
 <nav
-    class="navbar fixed top-0 z-100 backdrop-blur-sm transition-all duration-300 bg-[rgba(23,24,26,0.1)] h-5 lg:h-24"
+    class="navbar fixed top-0 z-100 backdrop-blur-sm transition-all duration-300 bg-[rgba(23,24,26,0.39)] h-5 lg:h-24"
     id="navbar"
     aria-label="Menu principale"
 >
