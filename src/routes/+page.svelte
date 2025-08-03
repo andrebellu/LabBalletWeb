@@ -81,7 +81,7 @@
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-8">
         I nostri Orari
     </h2>
-    <p class="text-center mb-8 md:mb-12">
+    <p class="text-center mb-8 md:mb-12 md:hidden">
         Scorri per vedere gli orari dei corsi.
     </p>
     <Table />
