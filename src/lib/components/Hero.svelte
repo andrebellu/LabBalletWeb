@@ -30,9 +30,9 @@
       class="max-w-md w-full px-4 flex flex-col items-center space-y-6 md:space-y-8 py-16 md:py-12"
     >
       <h1
-        class="text-5xl md:text-8xl font-playfair tracking-wide font-rose whitespace-nowrap"
+        class="text-3xl sm:text-4xl md:text-8xl font-playfair tracking-wide font-rose"
       >
-        LABballet <span class="text-3xl md:text-5xl">asd</span>
+        LABballet <span class="text-xl sm:text-2xl md:text-5xl">asd</span>
       </h1>
 
       <p class="text-base md:text-3xl font-light italic font-rose">
