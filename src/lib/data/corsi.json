@@ -7,7 +7,7 @@
     },
     {
         "title": "Danza Moderna",
-        "description": "<p class=\"pb-4\">I nostri corsi di <strong>danza moderna</strong>, in cui tecnica ed energia si uniscono per dare vita a emozioni in movimento.</p><p><strong>I nostri corsi di danza sono divisi per età:</strong></p><ul class=\"list-disc list-inside space-y-1\"><li><strong>Mini moderna</strong> (1-3 elementare): Mercoledì alle 18.30</li><li><strong>Moderna 2</strong> (4, 5 elementare e prima media): Lunedì e Venerdì alle 18</li><li><strong>Moderna 3</strong> (2, 3 media e primo superiore): Lunedì e Venerdì alle 19</li><li><strong>Moderna 4</strong> (dalla 2a superiore): Martedì e Giovedì alle 17.30</li><><strong> NEW! Moderna adulti principianti</strong>: Giovedì alle 21</ul>",
+        "description": "<p class=\"pb-4\">I nostri corsi di <strong>danza moderna</strong>, in cui tecnica ed energia si uniscono per dare vita a emozioni in movimento.</p><p><strong>I nostri corsi di danza sono divisi per età:</strong></p><ul class=\"list-disc list-inside space-y-1\"><li><strong>Mini moderna</strong> (1-3 elementare): Mercoledì alle 18.30</li><li><strong>Moderna 2</strong> (4, 5 elementare e prima media): Lunedì e Venerdì alle 18</li><li><strong>Moderna 3</strong> (2, 3 media e primo superiore): Lunedì e Venerdì alle 19</li><li><strong>Moderna 4</strong> (dalla 2a superiore): Martedì e Giovedì alle 17.30</li><li><strong> NEW! Moderna adulti principianti</strong>: Giovedì alle 21</li></ul>",
         "photo": "/images/corsi/moderna.webp",
         "type": "danza"
     },
