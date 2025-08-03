@@ -102,21 +102,16 @@
               class="whitespace-normal break-words text-left">Mini Mod.</span
             >
           </div>
-          <div class="flex border-b border-base-200 pb-1">
+          <div class="flex">
             <span class="font-medium flex-shrink-0 w-[3.5rem]">20:00</span><span
               class="whitespace-normal break-words text-left"
               >Ginn. Pilates Barre</span
             >
           </div>
-          <div class="flex">
-            <span class="font-medium flex-shrink-0 w-[3.5rem]">21:00</span><span
-              class="whitespace-normal break-words text-left"
-              >Danza Adulti Principianti (Moderno)</span
-            >
-          </div>
         </div>
       </div>
 
+      <!-- Giovedì -->
       <!-- Giovedì -->
       <div
         class="min-w-full inline-flex flex-col snap-start bg-base-100 rounded-box shadow border border-base-300 p-4 h-80"
@@ -137,9 +132,15 @@
               class="whitespace-normal break-words text-left">Classica 4</span
             >
           </div>
-          <div class="flex">
+          <div class="flex border-b border-base-200 pb-1">
             <span class="font-medium flex-shrink-0 w-[3.5rem]">20:00</span><span
               class="whitespace-normal break-words text-left">Body Tonic</span
+            >
+          </div>
+          <div class="flex">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">21:00</span><span
+              class="whitespace-normal break-words text-left"
+              >Danza Adulti Principianti (Moderno)</span
             >
           </div>
         </div>
@@ -306,10 +307,10 @@
           >Classica adulti principianti</td
         >
         <td class="border-r border-base-content/10"></td>
+        <td class="border-r border-base-content/10"></td>
         <td class="border-r border-base-content/10"
           >Moderna adulti principianti</td
         >
-        <td class="border-r border-base-content/10"></td>
         <td class="border-r border-base-content/10"></td>
       </tr>
     </tbody>
