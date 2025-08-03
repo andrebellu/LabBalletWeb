@@ -42,13 +42,13 @@
         "type": "fitness"
     },
     {
-        "title": "Pilates Barre",
-        "description": "<p class=\"pb-4\">Il <strong>Pilates</strong> unito alla danza. Migliora l'elasticità, aiuta a mantenere una buona postura per migliorare equilibrio e agilità</p><p><strong>Orari:</strong><p>Mercoledì alle 20</strong></p>",
-        "photo": "/images/corsi/pilates_barre.webp",
-        "type": "fitness"
-    },
+    "title": "Ginn. Pilates Barre",
+    "description": "<p class=\"pb-4\">Il <strong>Ginn. Pilates</strong> unito alla danza. Migliora l'elasticità, aumenta la forza muscolare e aiuta a mantenere una buona postura per migliorare equilibrio e agilità</p><p><strong>Orari:</strong><p>Mercoledì alle 20</strong></p>",
+    "photo": "/images/corsi/pilates_barre.webp",
+    "type": "fitness"
+},
     {
-        "title": "Pilates Miofasciale Posturale",
+        "title": "Ginn. Pilates Miofasciale Posturale",
         "description": "<p class=\"pb-4\">Allenamento, potenziamento e benessere</p><p><strong>Orari:</strong><br>Lunedì alle 9.30<br>Martedì alle 20</p>",
         "photo": "/images/corsi/pilates.webp",
         "type": "fitness"
