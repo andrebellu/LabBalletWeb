@@ -202,7 +202,7 @@
 <div
   class="hidden md:block overflow-x-auto rounded-box border border-base-300 bg-base-100 shadow-md"
 >
-  <table class="table table-fixed w-full border-collapse text-sm">
+  <table class="table w-full border-collapse text-sm">
     <thead
       class="bg-base-200 text-base-content border-b border-base-content/20"
     >
