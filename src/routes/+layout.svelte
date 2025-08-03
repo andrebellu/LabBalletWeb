@@ -6,7 +6,7 @@
 
 <svelte:head>
   <!-- SEO -->
-  <title>LabBallet - Associazione di Danza</title>
+  <title>LABballet ASD</title>
   <meta
     name="description"
     content="Associazione di danza con corsi per tutte le età. Scopri i nostri insegnanti qualificati e gli orari dei corsi."
@@ -14,10 +14,7 @@
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph / Social sharing -->
-  <meta
-    property="og:title"
-    content="LabBallet - Associazione di Danza a Dello"
-  />
+  <meta property="og:title" content="LABballet ASD" />
   <meta
     property="og:description"
     content="Corsi di danza classica, moderna, contemporanea e altro per ogni età."
