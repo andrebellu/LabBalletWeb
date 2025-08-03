@@ -1,7 +1,7 @@
 <div class="md:hidden pb-8">
   <div class="relative">
     <div
-      class="overflow-x-auto snap-x snap-mandatory scroll-smooth whitespace-nowrap pb-6 px-4 space-x-4 hide-scrollbar flex flex-row items-center"
+      class="overflow-x-auto snap-x snap-mandatory scroll-smooth whitespace-nowrap pb-6 px-2 space-x-4 hide-scrollbar flex flex-row items-center"
     >
       <!-- Lunedì -->
       <div
@@ -13,29 +13,37 @@
           Lunedì
         </h4>
         <div class="space-y-2 flex-grow">
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">9:30</span>
-            <span>Ginn. Pilates Miofasciale</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">9:30</span><span
+              class="whitespace-normal break-words text-left"
+              >Ginn. Pilates Miofasciale</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">17:00</span>
-            <span>Classica 2</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">17:00</span><span
+              class="whitespace-normal break-words text-left">Classica 2</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">18:00</span>
-            <span>Moderna 2</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">18:00</span><span
+              class="whitespace-normal break-words text-left">Moderna 2</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">19:00</span>
-            <span>Moderna 3</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">19:00</span><span
+              class="whitespace-normal break-words text-left">Moderna 3</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">20:00</span>
-            <span>Classica 3</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">20:00</span><span
+              class="whitespace-normal break-words text-left">Classica 3</span
+            >
           </div>
-          <div class="flex justify-between">
-            <span class="font-medium">21:00</span>
-            <span>Danza Adulti Principianti (Classico)</span>
+          <div class="flex">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">21:00</span><span
+              class="whitespace-normal break-words text-left"
+              >Danza Adulti Principianti (Classico)</span
+            >
           </div>
         </div>
       </div>
@@ -50,17 +58,21 @@
           Martedì
         </h4>
         <div class="space-y-2">
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">17:30</span>
-            <span>Classica 4</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">17:30</span><span
+              class="whitespace-normal break-words text-left">Classica 4</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">18:45</span>
-            <span>Moderna 4</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">18:45</span><span
+              class="whitespace-normal break-words text-left">Moderna 4</span
+            >
           </div>
-          <div class="flex justify-between">
-            <span class="font-medium">20:00</span>
-            <span>Ginn. Pilates Miofasciale</span>
+          <div class="flex">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">20:00</span><span
+              class="whitespace-normal break-words text-left"
+              >Ginn. Pilates Miofasciale</span
+            >
           </div>
         </div>
       </div>
@@ -75,25 +87,32 @@
           Mercoledì
         </h4>
         <div class="space-y-2">
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">16:30</span>
-            <span>GiocoDanza</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">16:30</span><span
+              class="whitespace-normal break-words text-left">GiocoDanza</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">17:30</span>
-            <span>Classica 1</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">17:30</span><span
+              class="whitespace-normal break-words text-left">Classica 1</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">18:30</span>
-            <span>Mini Mod.</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">18:30</span><span
+              class="whitespace-normal break-words text-left">Mini Mod.</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">20:00</span>
-            <span>Ginn. Pilates Barre</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">20:00</span><span
+              class="whitespace-normal break-words text-left"
+              >Ginn. Pilates Barre</span
+            >
           </div>
-          <div class="flex justify-between">
-            <span class="font-medium">21:00</span>
-            <span>Danza Adulti Principianti (Moderno)</span>
+          <div class="flex">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">21:00</span><span
+              class="whitespace-normal break-words text-left"
+              >Danza Adulti Principianti (Moderno)</span
+            >
           </div>
         </div>
       </div>
@@ -108,17 +127,20 @@
           Giovedì
         </h4>
         <div class="space-y-2">
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">17:30</span>
-            <span>Moderna 4</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">17:30</span><span
+              class="whitespace-normal break-words text-left">Moderna 4</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">18:45</span>
-            <span>Classica 4</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">18:45</span><span
+              class="whitespace-normal break-words text-left">Classica 4</span
+            >
           </div>
-          <div class="flex justify-between">
-            <span class="font-medium">20:00</span>
-            <span>Body Tonic</span>
+          <div class="flex">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">20:00</span><span
+              class="whitespace-normal break-words text-left">Body Tonic</span
+            >
           </div>
         </div>
       </div>
@@ -133,21 +155,25 @@
           Venerdì
         </h4>
         <div class="space-y-2">
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">17:00</span>
-            <span>Classica 2</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">17:00</span><span
+              class="whitespace-normal break-words text-left">Classica 2</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">18:00</span>
-            <span>Moderna 2</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">18:00</span><span
+              class="whitespace-normal break-words text-left">Moderna 2</span
+            >
           </div>
-          <div class="flex justify-between border-b border-base-200 pb-1">
-            <span class="font-medium">19:00</span>
-            <span>Moderna 3</span>
+          <div class="flex border-b border-base-200 pb-1">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">19:00</span><span
+              class="whitespace-normal break-words text-left">Moderna 3</span
+            >
           </div>
-          <div class="flex justify-between">
-            <span class="font-medium">20:00</span>
-            <span>Classica 3</span>
+          <div class="flex">
+            <span class="font-medium flex-shrink-0 w-[3.5rem]">20:00</span><span
+              class="whitespace-normal break-words text-left">Classica 3</span
+            >
           </div>
         </div>
       </div>
@@ -161,7 +187,9 @@
         >
           Sabato
         </h4>
-        <div class="whitespace-pre-line flex justify-center h-full">
+        <div
+          class="whitespace-pre-line flex justify-center h-full text-center text-sm"
+        >
           Stage a rotazione<br />
           Laboratorio Teatro Danza,<br />
           Heels e molto altro
@@ -268,7 +296,7 @@
         <td class="border-r border-base-content/10"
           >Ginn. Pilates Miofasciale</td
         >
-        <td class="border-r border-base-content/10">Ginn. Pilates Barre</td>
+        <td class="border-r border-base-content/10">Pilates Barre</td>
         <td class="border-r border-base-content/10">Body Tonic</td>
         <td class="border-r border-base-content/10">Classica 3</td>
       </tr>
