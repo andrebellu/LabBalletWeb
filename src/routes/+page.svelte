@@ -75,16 +75,20 @@
 </div>
 
 <div
-  class="table-section pt-8 md:pt-20 lg:pt-32 pb-8 md:pb-16 px-2 md:px-16 max-w-screen-xl mx-auto"
+  class="table-section pt-8 md:pt-20 lg:pt-32 pb-8 md:pb-16 px-4 md:px-8 lg:px-16 max-w-screen-xl mx-auto"
   id="orari"
 >
-  <h2 class="text-3xl md:text-5xl font-bold text-center mb-6 md:mb-8">
+  <h2
+    class="mt-4 md:mt-0 text-3xl md:text-5xl font-bold text-center mb-6 md:mb-8"
+  >
     I nostri Orari
   </h2>
   <p class="text-center mb-8 md:mb-12 md:hidden">
     Scorri per vedere gli orari dei corsi.
   </p>
-  <Table />
+  <div class="px-2 md:px-0">
+    <Table />
+  </div>
 </div>
 
 <Footer />
