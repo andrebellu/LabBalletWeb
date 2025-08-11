@@ -1,25 +1,62 @@
 <script>
-    import { gallery_links } from "$lib/stores/data";
     import { onMount } from "svelte";
     import ImageWithSkeleton from "$lib/components/ImageWithSkeleton.svelte";
+
+    let images = [];
+    let currentPage = 1;
+    let totalPages = 1;
+    let isLoading = false;
 
     let showModal = false;
     let modalImage = "";
     let currentIndex = 0;
+    let mounted = false;
 
-    let mounted = false; // usato per evitare errore SSR
-    let imgLoaded = [];
-
-    onMount(() => {
+    onMount(async () => {
         mounted = true;
+        await loadImages();
+
         window.addEventListener("keydown", handleKeydown);
+        window.addEventListener("scroll", handleScroll);
+
         return () => {
             window.removeEventListener("keydown", handleKeydown);
+            window.removeEventListener("scroll", handleScroll);
             document.body.classList.remove("overflow-hidden");
         };
     });
 
-    // Reazione a showModal per gestire overflow
+    async function loadImages() {
+        if (isLoading || currentPage > totalPages) return;
+
+        isLoading = true;
+        try {
+            const response = await fetch(
+                `/api/images?page=${currentPage}&limit=20`
+            );
+            const data = await response.json();
+
+            if (response.ok) {
+                images = [...images, ...data.images];
+                totalPages = data.totalPages;
+                currentPage++;
+            }
+        } catch (error) {
+            console.error("Error loading images:", error);
+        } finally {
+            isLoading = false;
+        }
+    }
+
+    function handleScroll() {
+        if (
+            window.innerHeight + window.scrollY >=
+            document.body.offsetHeight - 500
+        ) {
+            loadImages();
+        }
+    }
+
     $: if (mounted) {
         if (showModal) {
             document.body.classList.add("overflow-hidden");
@@ -42,14 +79,14 @@
     const showPrev = () => {
         if (currentIndex > 0) {
             currentIndex--;
-            modalImage = $gallery_links[currentIndex];
+            modalImage = images[currentIndex];
         }
     };
 
     const showNext = () => {
-        if (currentIndex < $gallery_links.length - 1) {
+        if (currentIndex < images.length - 1) {
             currentIndex++;
-            modalImage = $gallery_links[currentIndex];
+            modalImage = images[currentIndex];
         }
     };
 
@@ -66,7 +103,6 @@
         if (event.key === "Escape") closeModal();
     };
 
-    // Touch gesture per swipe su mobile
     let touchStartX = 0;
     let touchEndX = 0;
 
@@ -95,7 +131,7 @@
 <div
     class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4"
 >
-    {#each $gallery_links as link, i}
+    {#each images as link, i}
         <div
             class="overflow-hidden rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
         >
@@ -111,20 +147,27 @@
     {/each}
 </div>
 
-<!-- Modal -->
+<!-- Loading indicator -->
+{#if isLoading}
+    <div class="text-center py-8">
+        <div
+            class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary"
+        ></div>
+    </div>
+{/if}
+
 {#if showModal}
     <div
         class="modal-backdrop fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-100"
         on:click={handleBackdropClick}
         role="button"
         tabindex="0"
-        aria-label="Chiudi modale"
+        aria-label="Chiudi modal"
         on:keydown={(e) => {
             if (e.key === "Enter" || e.key === " ") closeModal();
         }}
     >
         <div class="relative max-w-5xl mx-auto bg-white rounded-lg p-2">
-            <!-- Pulsante chiusura -->
             <button
                 class="absolute top-2 right-2 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-red-700"
                 on:click={closeModal}
@@ -132,7 +175,6 @@
                 &times;
             </button>
 
-            <!-- Immagine -->
             <img
                 src={modalImage}
                 alt="Ingrandita"
@@ -141,7 +183,6 @@
                 on:touchend={handleTouchEnd}
             />
 
-            <!-- Freccia sinistra -->
             {#if currentIndex > 0}
                 <button
                     class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white text-black shadow rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100"
@@ -151,8 +192,7 @@
                 </button>
             {/if}
 
-            <!-- Freccia destra -->
-            {#if currentIndex < $gallery_links.length - 1}
+            {#if currentIndex < images.length - 1}
                 <button
                     class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white text-black shadow rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-100"
                     on:click={showNext}

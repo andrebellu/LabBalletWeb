@@ -60,10 +60,19 @@ html {
     scroll-behavior: smooth;
 }
 
+@apply m-0 p-0;
+
 html,
 body {
     @apply m-0 p-0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
 }
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
 .overlay {
     @apply absolute inset-0 bg-black opacity-60;
     z-index: -1;

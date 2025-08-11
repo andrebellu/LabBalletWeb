@@ -2,6 +2,9 @@ import adapter from '@sveltejs/adapter-cloudflare';
 
 export default {
 	kit: {
+		env: {
+			dir: process.env.ENV_DIR || './'
+		},
 		prerender: {
 			handleHttpError: ({ path, status }) => {
 				if (path.startsWith('/images/') && status === 404) {
@@ -11,7 +14,6 @@ export default {
 			}
 		},
 		adapter: adapter({
-			// See below for an explanation of these options
 			config: undefined,
 			platformProxy: {
 				configPath: undefined,
