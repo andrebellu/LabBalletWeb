@@ -33,16 +33,24 @@
     aria-label="Menu principale"
 >
     <div class="navbar-start">
-        <a href="/" aria-label="Home">
+        <a
+            href="/"
+            title="Home - LABballet ASD – Scuola di Danza e Fitness a Dello"
+            aria-label="Home - LABballet ASD"
+            class="sr-only lg:not-sr-only text-white font-bold hover:text-red-500"
+        >
+            LABballet ASD – Scuola di Danza e Fitness a Dello
+        </a>
+        <a href="/">
             <img
                 src="/images/logo.webp"
                 alt="logo"
                 width="96"
                 height="96"
                 loading="eager"
-                class="w-18 lg:w-24 aspect-square p-2 lg:p-4"
-            />
-        </a>
+                class="w-16 lg:w-24 aspect-square p-2 lg:p-4"
+            /></a
+        >
     </div>
 
     <div

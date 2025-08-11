@@ -1,8 +1,8 @@
 <script>
-  let lang = "it";
+    let lang = "it";
 
-  const policy = {
-    it: `
+    const policy = {
+        it: `
     <h1 class="text-3xl font-bold mb-4">Privacy Policy</h1>
     <p class="mb-4 text-red-600 font-semibold">
       Questo sito non raccoglie dati personali e non utilizza cookie.
@@ -10,7 +10,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">1. Finalità e trasparenza</h2>
     <p class="mb-4">
-      Il sito <strong>labballetweb.pages.dev</strong> ha finalità puramente informative e non raccoglie né tratta dati personali degli utenti.
+      Il sito <strong>labballet.it</strong> ha finalità puramente informative e non raccoglie né tratta dati personali degli utenti.
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">2. Servizi di terze parti</h2>
@@ -39,7 +39,7 @@
       Per qualsiasi chiarimento, è possibile contattare il titolare del sito via WhatsApp attraverso l’apposito widget.
     </p>
   `,
-    en: `
+        en: `
     <h1 class="text-3xl font-bold mb-4">Privacy Policy</h1>
     <p class="mb-4 text-red-600 font-semibold">
       This website does not collect personal data and does not use cookies.
@@ -47,7 +47,7 @@
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">1. Purpose and transparency</h2>
     <p class="mb-4">
-      The website <strong>labballetweb.pages.dev</strong> is purely informational and does not collect or process any personal data from users.
+      The website <strong>labballet.it</strong> is purely informational and does not collect or process any personal data from users.
     </p>
 
     <h2 class="text-2xl font-semibold mt-6 mb-2">2. Third-party services</h2>
@@ -76,34 +76,34 @@
       For any questions, users can contact the site owner via WhatsApp through the widget.
     </p>
   `,
-  };
+    };
 
-  let policyContainer;
+    let policyContainer;
 
-  $: if (policyContainer) {
-    policyContainer.innerHTML = policy[lang];
-  }
+    $: if (policyContainer) {
+        policyContainer.innerHTML = policy[lang];
+    }
 </script>
 
 <div class="max-w-3xl mx-auto p-6 font-sans leading-relaxed text-gray-800">
-  <div class="flex justify-end mb-6 space-x-2">
-    <button
-      class="btn px-4 py-2 disabled:opacity-50"
-      on:click={() => (lang = "it")}
-      disabled={lang === "it"}
-      aria-label="Switch to Italian"
-    >
-      Italiano
-    </button>
-    <button
-      class="btn px-4 py-2 disabled:opacity-50"
-      on:click={() => (lang = "en")}
-      disabled={lang === "en"}
-      aria-label="Switch to English"
-    >
-      English (US)
-    </button>
-  </div>
+    <div class="flex justify-end mb-6 space-x-2">
+        <button
+            class="btn px-4 py-2 disabled:opacity-50"
+            on:click={() => (lang = "it")}
+            disabled={lang === "it"}
+            aria-label="Switch to Italian"
+        >
+            Italiano
+        </button>
+        <button
+            class="btn px-4 py-2 disabled:opacity-50"
+            on:click={() => (lang = "en")}
+            disabled={lang === "en"}
+            aria-label="Switch to English"
+        >
+            English (US)
+        </button>
+    </div>
 
-  <section class="prose prose-lg" bind:this={policyContainer}></section>
+    <section class="prose prose-lg" bind:this={policyContainer}></section>
 </div>

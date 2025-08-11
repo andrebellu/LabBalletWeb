@@ -16,7 +16,7 @@
     </div>
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8">
         <div class="text-center">
-            <h2 class="text-5xl font-bold mb-6">Danza</h2>
+            <h2 class="text-2xl md:text-5xl font-bold mb-6">Danza</h2>
             <p class="text-lg mb-8">
                 Esprimiti con il movimento nei nostri corsi di danza per tutte
                 età e livelli.
@@ -45,7 +45,7 @@
     </div>
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8">
         <div class="text-center">
-            <h2 class="text-5xl font-bold mb-6">Fitness</h2>
+            <h2 class="text-2xl md:text-5xl font-bold mb-6">Fitness</h2>
             <p class="text-lg mb-8">
                 Allenati con i migliori istruttori per raggiungere i tuoi
                 obiettivi.
@@ -74,7 +74,7 @@
     </div>
     <div class="w-full lg:w-1/2 flex items-center justify-center p-8">
         <div class="text-center">
-            <h2 class="text-5xl font-bold mb-6">Stage</h2>
+            <h2 class="text-2xl md:text-5xl font-bold mb-6">Stage</h2>
             <p class="text-lg mb-8">Partecipa ai nostri stage!</p>
             <button
                 class="btn btn-primary px-10 text-lg"
