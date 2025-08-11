@@ -1,4 +1,3 @@
-// src/routes/api/images/+server.js
 import { listR2Objects } from '$lib/server/r2';
 
 export async function GET({ url }) {

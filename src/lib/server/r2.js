@@ -1,16 +1,17 @@
 import { S3Client, ListObjectsV2Command } from '@aws-sdk/client-s3';
+import { R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME, CF_ACCOUNT_ID } from '$env/static/private';
 
 export async function listR2Objects({ page = 1, limit = 20 }) {
-    if (!process.env.R2_BUCKET_NAME) {
+    if (!R2_BUCKET_NAME) {
         throw new Error("R2_BUCKET_NAME is not defined");
     }
 
     const client = new S3Client({
         region: 'auto',
-        endpoint: `https://${process.env.CF_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+        endpoint: `https://${CF_ACCOUNT_ID}.r2.cloudflarestorage.com`,
         credentials: {
-            accessKeyId: process.env.R2_ACCESS_KEY_ID,
-            secretAccessKey: process.env.R2_SECRET_ACCESS_KEY
+            accessKeyId: R2_ACCESS_KEY_ID,
+            secretAccessKey: R2_SECRET_ACCESS_KEY
         }
     });
 
@@ -20,7 +21,7 @@ export async function listR2Objects({ page = 1, limit = 20 }) {
     do {
         const response = await client.send(
             new ListObjectsV2Command({
-                Bucket: process.env.R2_BUCKET_NAME,
+                Bucket: R2_BUCKET_NAME,
                 ContinuationToken: continuationToken,
             })
         );
