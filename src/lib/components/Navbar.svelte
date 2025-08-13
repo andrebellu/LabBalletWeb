@@ -35,11 +35,11 @@
     <div class="navbar-start">
         <a
             href="/"
-            title="Home - LABballet ASD – Scuola di Danza e Fitness a Dello"
+            title="Home - LABballet ASD – Associazione di Danza e Fitness a Dello"
             aria-label="Home - LABballet ASD"
             class="sr-only lg:not-sr-only text-white font-bold hover:text-red-500"
         >
-            LABballet ASD – Scuola di Danza e Fitness a Dello
+            LABballet ASD – Associazione di Danza e Fitness a Dello
         </a>
         <a href="/">
             <img

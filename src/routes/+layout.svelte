@@ -5,15 +5,15 @@
 
     const metaConfig = {
         "/": {
-            title: "LABballet ASD – Scuola di Danza e Fitness a Dello (BS)",
+            title: "LABballet ASD – Associazione di Danza e Fitness a Dello (BS)",
             description:
-                "LABballet ASD è la scuola di danza di Dello (BS) con corsi per bambini e adulti: danza classica, moderna, contemporanea, pilates e fitness. Scopri i nostri insegnanti e orari.",
+                "LABballet ASD è un'associazione di danza di Dello (BS) con corsi per bambini e adulti: danza classica, moderna, pilates e fitness. Scopri i nostri insegnanti e orari.",
             canonical: "https://labballet.it/",
         },
         "/danza": {
             title: "Corsi di Danza – LABballet ASD",
             description:
-                "Scopri tutti i corsi di danza di LABballet ASD a Dello (BS), per ogni età e livello: classica, moderna, contemporanea e altro.",
+                "Scopri tutti i corsi di danza di LABballet ASD a Dello (BS), per ogni età e livello: classica, moderna e altro.",
             canonical: "https://labballet.it/danza",
         },
         "/fitness": {
@@ -25,7 +25,7 @@
         "/galleria": {
             title: "Galleria Fotografica – LABballet ASD",
             description:
-                "Scopri la galleria fotografica di LABballet ASD, la scuola di danza a Dello (BS). Guarda le foto dei nostri saggi.",
+                "Scopri la galleria fotografica di LABballet ASD. Guarda le foto dei nostri saggi.",
             canonical: "https://labballet.it/galleria",
         },
     };
