@@ -3,14 +3,35 @@
     import ImageWithSkeleton from "$lib/components/ImageWithSkeleton.svelte";
 
     let images = [];
-    let currentPage = 1;
-    let totalPages = 1;
-    let isLoading = false;
+    let images2024 = [];
+    let images2025 = [];
+
+    let currentPage2024 = 1;
+    let currentPage2025 = 1;
+    let isLoading2024 = false;
+    let isLoading2025 = false;
+    let hasMore2024 = true;
+    let hasMore2025 = true;
 
     let showModal = false;
     let modalImage = "";
     let currentIndex = 0;
     let mounted = false;
+
+    let activeTab = "2025";
+
+    async function fillViewportIfNeeded() {
+        let tries = 0;
+        while (
+            ((activeTab === "2025" && hasMore2025) ||
+                (activeTab === "2024" && hasMore2024)) &&
+            document.body.offsetHeight <= window.innerHeight + 100 &&
+            tries < 10
+        ) {
+            await loadImages();
+            tries++;
+        }
+    }
 
     onMount(async () => {
         mounted = true;
@@ -27,24 +48,52 @@
     });
 
     async function loadImages() {
-        if (isLoading || currentPage > totalPages) return;
-
-        isLoading = true;
-        try {
-            const response = await fetch(
-                `/api/images?page=${currentPage}&limit=20`
-            );
-            const data = await response.json();
-
-            if (response.ok) {
-                images = [...images, ...data.images];
-                totalPages = data.totalPages;
-                currentPage++;
+        if (activeTab === "2025") {
+            if (isLoading2025 || !hasMore2025) return;
+            isLoading2025 = true;
+            try {
+                const res = await fetch(
+                    `/api/images?page=${currentPage2025}&limit=50`
+                );
+                const data = await res.json();
+                if (res.ok) {
+                    const prevLen = images2025.length;
+                    images2025 = [...images2025, ...data.gruppo2025];
+                    if (
+                        images2025.length === prevLen ||
+                        data.gruppo2025.length === 0
+                    ) {
+                        hasMore2025 = false;
+                    } else {
+                        currentPage2025++;
+                    }
+                }
+            } finally {
+                isLoading2025 = false;
             }
-        } catch (error) {
-            console.error("Error loading images:", error);
-        } finally {
-            isLoading = false;
+        } else {
+            if (isLoading2024 || !hasMore2024) return;
+            isLoading2024 = true;
+            try {
+                const res = await fetch(
+                    `/api/images?page=${currentPage2024}&limit=50`
+                );
+                const data = await res.json();
+                if (res.ok) {
+                    const prevLen = images2024.length;
+                    images2024 = [...images2024, ...data.gruppo2024];
+                    if (
+                        images2024.length === prevLen ||
+                        data.gruppo2024.length === 0
+                    ) {
+                        hasMore2024 = false;
+                    } else {
+                        currentPage2024++;
+                    }
+                }
+            } finally {
+                isLoading2024 = false;
+            }
         }
     }
 
@@ -54,6 +103,7 @@
             document.body.offsetHeight - 500
         ) {
             loadImages();
+            fillViewportIfNeeded();
         }
     }
 
@@ -66,8 +116,8 @@
     }
 
     const openModal = (image, index) => {
-        modalImage = image;
         currentIndex = index;
+        modalImage = images[currentIndex];
         showModal = true;
     };
 
@@ -127,28 +177,85 @@
     };
 </script>
 
+<!-- Tab -->
+<div class="flex border-b border-gray-300 mb-4">
+    <button
+        class={`px-4 py-2 ${activeTab === "2025" ? "border-b-2 border-primary font-bold" : ""}`}
+        on:click={async () => {
+            activeTab = "2025";
+            if (images2025.length === 0 && hasMore2025) {
+                await loadImages();
+            }
+            await fillViewportIfNeeded();
+        }}
+    >
+        ✨ In punta di fiaba
+    </button>
+    <button
+        class={`px-4 py-2 ${activeTab === "2024" ? "border-b-2 border-primary font-bold" : ""}`}
+        on:click={async () => {
+            activeTab = "2024";
+            if (images2024.length === 0 && hasMore2024) {
+                await loadImages();
+            }
+            await fillViewportIfNeeded();
+        }}
+    >
+        📺 Ci vediamo in tv
+    </button>
+</div>
+
 <!-- Galleria -->
 <div
     class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4"
 >
-    {#each images as link, i}
-        <div
-            class="overflow-hidden rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
-        >
-            <button
-                type="button"
-                class="w-full h-full p-0 bg-transparent border-none cursor-pointer focus:outline-none"
-                on:click={() => openModal(link, i)}
-                aria-label="Apri immagine ingrandita"
+    {#if activeTab === "2025"}
+        {#each images2025 as link, i}
+            <div
+                class="overflow-hidden rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
             >
-                <ImageWithSkeleton src={link} alt="Foto danza" />
-            </button>
-        </div>
-    {/each}
+                <button
+                    type="button"
+                    class="w-full h-full p-0 bg-transparent border-none cursor-pointer focus:outline-none"
+                    on:click={() => {
+                        images = images2025;
+                        openModal(link, i);
+                    }}
+                    aria-label="Apri immagine ingrandita"
+                >
+                    <ImageWithSkeleton
+                        src={link}
+                        alt={`Foto 2025 - ${i + 1}`}
+                    />
+                </button>
+            </div>
+        {/each}
+    {:else if activeTab === "2024"}
+        {#each images2024 as link, i}
+            <div
+                class="overflow-hidden rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
+            >
+                <button
+                    type="button"
+                    class="w-full h-full p-0 bg-transparent border-none cursor-pointer focus:outline-none"
+                    on:click={() => {
+                        images = images2024;
+                        openModal(link, i);
+                    }}
+                    aria-label="Apri immagine ingrandita"
+                >
+                    <ImageWithSkeleton
+                        src={link}
+                        alt={`Foto 2024 - ${i + 1}`}
+                    />
+                </button>
+            </div>
+        {/each}
+    {/if}
 </div>
 
 <!-- Loading indicator -->
-{#if isLoading}
+{#if (activeTab === "2025" && isLoading2025) || (activeTab === "2024" && isLoading2024)}
     <div class="text-center py-8">
         <div
             class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary"
