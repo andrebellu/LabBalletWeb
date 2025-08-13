@@ -2,35 +2,58 @@
     import "../app.css";
     import { page } from "$app/stores";
     import Navbar from "$lib/components/Navbar.svelte";
+
+    const metaConfig = {
+        "/": {
+            title: "LABballet ASD – Scuola di Danza e Fitness a Dello (BS)",
+            description:
+                "LABballet ASD è la scuola di danza di Dello (BS) con corsi per bambini e adulti: danza classica, moderna, contemporanea, pilates e fitness. Scopri i nostri insegnanti e orari.",
+            canonical: "https://labballet.it/",
+        },
+        "/danza": {
+            title: "Corsi di Danza – LABballet ASD",
+            description:
+                "Scopri tutti i corsi di danza di LABballet ASD a Dello (BS), per ogni età e livello: classica, moderna, contemporanea e altro.",
+            canonical: "https://labballet.it/danza",
+        },
+        "/insegnanti": {
+            title: "Insegnanti – LABballet ASD",
+            description:
+                "Conosci gli insegnanti di LABballet ASD, professionisti della danza pronti a guidarti con passione e competenza.",
+            canonical: "https://labballet.it/insegnanti",
+        },
+    };
+
+    $: currentMeta = metaConfig[$page.url.pathname] || {
+        title: "LABballet ASD – Scuola di Danza e Fitness",
+        description:
+            "LABballet ASD propone corsi di danza e fitness a Dello (BS) per tutte le età.",
+        canonical: "https://labballet.it" + $page.url.pathname,
+    };
 </script>
 
 <svelte:head>
-    <title>LABballet ASD – Corsi di Danza e Fitness a Dello (BS)</title>
-    <meta
-        name="description"
-        content="LABballet ASD è un'associazione di danza e fitness a Dello (BS) con corsi per tutte le età: classica, moderna, contemporanea e altro. Scopri i nostri insegnanti e orari."
-    />
-
+    <title>{currentMeta.title}</title>
+    <meta name="description" content={currentMeta.description} />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href={"https://labballet.it" + $page.url.pathname} />
+    <link rel="canonical" href={currentMeta.canonical} />
 
-    <!-- Open Graph / Social sharing -->
-    <meta property="og:title" content="LABballet ASD" />
-    <meta
-        property="og:description"
-        content="Corsi di danza classica, moderna, contemporanea e altro per ogni età."
-    />
-    <meta property="og:url" content="https://www.labballet.it" />
+    <!-- Open Graph -->
+    <meta property="og:title" content={currentMeta.title} />
+    <meta property="og:description" content={currentMeta.description} />
+    <meta property="og:url" content={currentMeta.canonical} />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
 
-    <!-- Preload immagine hero (LCP) -->
-    <link
-        rel="preload"
-        as="image"
-        href="/images/carosello/carosello_hercules.webp"
-        fetchpriority="high"
-    />
+    <!-- Preload hero image (LCP) solo in home -->
+    {#if $page.url.pathname === "/"}
+        <link
+            rel="preload"
+            as="image"
+            href="/images/carosello/carosello_hercules.webp"
+            fetchpriority="high"
+        />
+    {/if}
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

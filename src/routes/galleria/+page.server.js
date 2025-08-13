@@ -3,7 +3,6 @@ export const load = async ({ url, fetch }) => {
     const limit = 10;
 
     try {
-        // Usa l'endpoint relativo al tuo sito
         const response = await fetch('/api/images');
         const data = await response.json();
 
