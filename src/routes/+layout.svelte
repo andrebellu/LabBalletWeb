@@ -16,11 +16,17 @@
                 "Scopri tutti i corsi di danza di LABballet ASD a Dello (BS), per ogni età e livello: classica, moderna, contemporanea e altro.",
             canonical: "https://labballet.it/danza",
         },
-        "/insegnanti": {
-            title: "Insegnanti – LABballet ASD",
+        "/fitness": {
+            title: "Corsi di Fitness – LABballet ASD",
             description:
-                "Conosci gli insegnanti di LABballet ASD, professionisti della danza pronti a guidarti con passione e competenza.",
-            canonical: "https://labballet.it/insegnanti",
+                "LABballet ASD offre corsi di fitness a Dello (BS): allenamento per migliorare il tuo benessere.",
+            canonical: "https://labballet.it/fitness",
+        },
+        "/galleria": {
+            title: "Galleria Fotografica – LABballet ASD",
+            description:
+                "Scopri la galleria fotografica di LABballet ASD, la scuola di danza a Dello (BS). Guarda le foto dei nostri saggi.",
+            canonical: "https://labballet.it/galleria",
         },
     };
 
