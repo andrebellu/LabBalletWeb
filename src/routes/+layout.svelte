@@ -31,7 +31,7 @@
     };
 
     $: currentMeta = metaConfig[$page.url.pathname] || {
-        title: "LABballet ASD – Scuola di Danza e Fitness",
+        title: "LABballet ASD – Associazione di Danza e Fitness",
         description:
             "LABballet ASD propone corsi di danza e fitness a Dello (BS) per tutte le età.",
         canonical: "https://labballet.it" + $page.url.pathname,
