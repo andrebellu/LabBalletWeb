@@ -1,30 +1,36 @@
 [
     {
+        "slug": "giovanna-staffoni",
         "name": "Giovanna Staffoni",
         "description": "Direttrice artistica e insegnante dei corsi di danza classica, moderna e heels",
         "photo": "/images/insegnanti/gs.webp"
     },
     {
+        "slug": "linda-stefanoni",
         "name": "Linda Stefanoni",
         "description": "Insegnante di propedeutica, classica, moderna e ginn. pilates barre",
         "photo": "/images/insegnanti/ls.webp"
     },
     {
+        "slug": "margherita-feroldi",
         "name": "Margherita Feroldi",
         "description": "Insegnante di danza classica, moderna e body tonic",
         "photo": "/images/insegnanti/mf.webp"
     },
     {
+        "slug": "lara-zanini",
         "name": "Lara Zanini",
         "description": "Insegnante di danza classica, moderna e body tonic",
         "photo": "/images/insegnanti/lz.webp"
     },
     {
+        "slug": "myriam-zinco",
         "name": "Myriam Zinco",
         "description": "Assistente all'insegnamento della danza",
         "photo": "/images/insegnanti/my.webp"
     },
     {
+        "slug": "daniela-carlotti",
         "name": "Daniela Carlotti",
         "description": "Insegnante di ginn. pilates miofasciale posturale",
         "photo": "/images/insegnanti/dc.webp"

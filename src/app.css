@@ -93,3 +93,7 @@ html::-webkit-scrollbar {
 .menu a {
     @apply md:text-white hover:text-red-500 font-bold text-black;
 }
+
+.curriculum li {
+    @apply list-disc pl-5;
+}

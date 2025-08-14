@@ -3431,6 +3431,7 @@ __metadata:
     autoprefixer: ^10.4.21
     daisyui: ^5.0.43
     dotenv: ^17.2.1
+    marked: ^16.1.2
     postcss: ^8.5.6
     rollup: ^4.45.1
     svelte: ^5.0.0
@@ -3592,6 +3593,15 @@ __metadata:
     promise-retry: ^2.0.1
     ssri: ^12.0.0
   checksum: 6fb2fee6da3d98f1953b03d315826b5c5a4ea1f908481afc113782d8027e19f080c85ae998454de4e5f27a681d3ec58d57278f0868d4e0b736f51d396b661691
+  languageName: node
+  linkType: hard
+
+"marked@npm:^16.1.2":
+  version: 16.1.2
+  resolution: "marked@npm:16.1.2"
+  bin:
+    marked: bin/marked.js
+  checksum: efe785c5be470e61001fcd9505f6c7c72822c883b81b7cf014b7a19d0d74977b487e0c73a6eb89da7728dbfca04fd41a53b8a001861a63587cfea6bb6c28e86a
   languageName: node
   linkType: hard
 

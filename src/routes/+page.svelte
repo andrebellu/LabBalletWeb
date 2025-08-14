@@ -57,6 +57,7 @@
                     name={insegnante.name}
                     description={insegnante.description}
                     photo={insegnante.photo}
+                    slug={insegnante.slug}
                 />
             {/each}
         </div>
