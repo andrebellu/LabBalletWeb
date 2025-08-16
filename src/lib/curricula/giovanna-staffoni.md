@@ -1,0 +1,46 @@
+-   **Inizio studi** — Inizia gli studi di danza classica a Brescia all’età di 4 anni presso la Scuola “Alba”.
+-   **1996** — Inizia il percorso formativo presso “Académie Européenne de Danse Jazz” a Nizza (4 anni).
+-   **1996** — Integra gli studi con la danza hip hop a Brescia con Luigi Grosso (ex ballerino RAI).
+-   **1999** — Partecipa al concorso presso il Teatro Nuovo di Torino, aggiudicandosi uno degli ultimi posti disponibili presso il Liceo Coreutico Artistico per l’arte e lo spettacolo e borse di studio per Danza Classica, Jazz e Contemporanea.
+-   **2000 e 2003** — Partecipa come solista con un pezzo tratto dal Musical "Rent" presso varie rassegne nel Bresciano, Udine, Milano e Chioggia.
+-   **2001** — Partecipa al concorso DANZASI’ a Roma arrivando in semifinale con una coreografia jazz di Stefania Talia.
+-   **2006** — Si diploma come ballerina professionista al “MAS Music Art & Show Accademia per lo Spettacolo” (riconosciuto dal CONI) a Milano, studiando con:
+    -   Danza Classica: Ludmil Tchakally
+    -   Danza Jazz: Alberta Palmisano
+    -   Contemporaneo: Lia Courrier
+    -   Hip hop: Roberto Saraceno, Max Savatteri
+    -   Laboratorio coreografico: Davide Manico, Francesca Frassinelli
+    -   Acrobatica: Gabriella Crosignani
+    -   Musical Tap: Giovanni Lampugnani
+    -   Recitazione: Michele Bottini
+    -   Canto: Francesco Lori
+-   **2007** — Vince il premio “MIGLIOR INTERPRETAZIONE” al Concorso di Danza Realmonte di Agrigento.
+-   **Stage e seminari** — Partecipa a formazioni con: Raffaele Paganini, Serge Alzetta, Genevieve Blanchard (Jazz), Manuel Frattini (Musical), Annarita Larghi (Modern), Matteo Corbetta (Classica), Kat Wildish (Classico accademico, American Ballet di New York).
+-   **Corsi di aggiornamento** — Partecipa a workshop a New York presso Broadway Dance Center, Steps e Alvin Ailey (estate 2012 e 2017) con docenti tra cui:
+    -   Danielle Polanco (heels & vogue)
+    -   Derek Mitchell (street jazz)
+    -   Q (street jazz)
+    -   Princess Loockeroo (waacking)
+    -   Kat Wildish (classico accademico)
+    -   Tony Guerrero (burlesque jazz)
+    -   Lane Napper (musical theatre)
+    -   Javier Ninja (vogue)
+    -   Yanis Marshall (heels)
+    -   Shirlene Quigley (street stiletto)
+    -   Presso Broadway Dance Center e Peridance Capezio Center, New York
+-   **Dance on Heels** — Approfondisce la Dance on Heels con Dolores Ninja Parisi tramite corsi annuali e intensive a Bergamo. Workshop intensivi con Yanis Marshall e Danielle Polanco (ottobre 2014, ottobre 2015).
+
+**Esperienze lavorative**
+
+-   Corpo di ballo nel video musicale “Pump It Tap” di Danzel e per lo spot Pringles.
+-   Corpo di ballo nel video dei “Jat Lag” con Raf e Max Gazzè per la canzone “E' necessario”.
+-   Corpo di ballo RAI nella trasmissione televisiva CDLIVE su RAI 2.
+-   Ballerina nello spettacolo teatrale presentato da Paolo Limiti, Teatro Manzoni a Milano.
+-   Ballerina nel video musicale del gruppo “Minima Beat” (Warner) per la canzone “May Day”.
+-   Performance con la compagnia Kormat per il festival “La Strada” di Brescia.
+-   Spettacolo con la compagnia Kormat per il carnevale di Fano: “Pulcinella” (2010), “Studio 54” (2011).
+-   Spettacolo con la compagnia Kormat per il Festival “Quasi Solo” con “Triquadri”.
+-   Insegnante presso lo stage internazionale di Sale Marasino come docente per Heels (estate 2015).
+-   **2016** — Selezionata per la compagnia di Dolores Ninja Parisi “U Betta Work Crew”.
+-   Insegnante e coreografa di danza Classica, Modern Jazz e Heels in varie scuole nel bresciano e a Milano dal 2006 a oggi, portando allieve ad accademie di prestigio.
+-   **Dal 2019** — Direttrice artistica e insegnante dei corsi presso _LABballet ASD_.

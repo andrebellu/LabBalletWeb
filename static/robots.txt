@@ -1,2 +1,15 @@
 User-agent: *
-Disallow:
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /server/
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /*.env$
+Disallow: /*.git$
+
+Allow: /
+
+# Sitemap
+Sitemap: https://www.labballet.it/sitemap.xml

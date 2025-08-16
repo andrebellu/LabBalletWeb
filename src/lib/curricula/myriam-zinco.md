@@ -1,11 +1,13 @@
 -   **2011–2016** — Studi di danza classica, tecnica RAD, presso la scuola di danza _Arabesque_.
 -   **Dal 2016** — Prosegue gli studi di danza classica, tecnica Vaganova, presso la scuola di danza _Cubania_ con l’insegnante **Giovanna Staffoni**.
--   **Dal 2018** — Affianca agli studi di classico quelli di danza moderna con le insegnanti **Giovanna Staffoni** e **Margherita Feroldi** presso _LAB Ballet ASD_.
+-   **Dal 2018** — Affianca agli studi di classico quelli della danza moderna con le insegnanti **Giovanna Staffoni** e **Margherita Feroldi** presso _LAB Ballet ASD_.
 -   **2019** — Vince la borsa di studio come miglior talento, aggiudicandosi uno stage di danza classica accademica con l’insegnante **Matteo Corbetta**, organizzato dalla scuola _Artedanza_.
 -   **2020–2021** — Durante il periodo del Covid-19, prosegue gli studi seguendo lezioni online di _LAB Ballet ASD_, lezioni di danza classica con il docente **Matteo Corbetta** e vari corsi organizzati da _OnDance_ (classico, contemporaneo, musical theatre).
--   **Stage e seminari** — Formazioni con **Carla Fracci** (Étoile Teatro alla Scala), **Kat Wildish** (American Ballet Theatre, New York City Ballet), **Monica Perego** (English National Ballet) e **Matteo Corbetta** (Teatro alla Scala, American Ballet Theatre).
+-   **Stage e seminari** di formazione con **Carla Fracci** (Étoile Teatro alla Scala), **Kat Wildish** (American Ballet Theatre, New York City Ballet), **Monica Perego** (English National Ballet), **Matteo Corbetta** (Teatro alla Scala, American Ballet Theatre), **Renata Justino** (docente e esaminatrice RAD) e **Nicola Bertelli** (docente di contemporaneo diplomato IDA).
 -   **2021 e 2024** — Stage intensivi di teatro fisico con l’attrice e showgirl **Emanuela Panatta**.
 -   **Dal 2021** — Stage mensili di Teatro Danza con **Davide Manico** presso _LAB Ballet ASD_.
--   **2024** — Corso di formazione per assistente all’insegnamento della danza con **Marco Batti**.
--   **Dal 2025** — Assistente all’insegnamento della danza tesserata _Libertas_; affianca **Linda Stefanoni** presso _LAB Ballet ASD_.
+-   **Gennaio 2022** - Supera l'audizione con Igal Perry per partecipare al **Global Summer Dance Intensive 2022** al _Peridance Centre_ di **New York**
+-   **2024** — Corso di formazione per assistente all’insegnamento della danza organizzato da _Ateneo della Danza_ con **Marco Batti**.
+-   **2025** — Ballerina nel videoclip musicale "Tu sei qui" di Guge
 -   **2025** — Partecipa al concorso _Artedanza_, ottenendo una borsa di studio per uno stage estivo a _Castione della Presolana_ con **Renata Justino**, **Matteo Corbetta**, **Lisa Colombo** e **Nicola Bertelli**.
+-   **Dal 2025** — Assistente all’insegnamento della danza tesserata _Libertas_; affianca **Linda Stefanoni** presso _LAB Ballet ASD_.

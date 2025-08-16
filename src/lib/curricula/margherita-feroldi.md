@@ -1,0 +1,10 @@
+-   **Inizio studi** — Inizia danza all'età di 6 anni presso il _Centro Culturale Danzarte_ diretto da Luisa Cuttini a Brescia.
+-   All'età di 9 anni frequenta un anno di **danza classica** con il Maestro Domingo Bertini.
+-   Si dedica allo studio della **danza contemporanea** fino ai 16 anni con la Maestra Luisa Cuttini.
+-   All'età di 16 anni, parallelamente alla danza contemporanea, inizia a frequentare le lezioni di **danza classica** con il Maestro **Matteo Corbetta** (Ballerino professionista diplomato all'Accademia della Scala di Milano, Insegnate Certificato American Ballet Theatre New York, Primary – Grade 7° e Partnering).
+-   **Dal 2011 al 2014** — frequenta un corso di Modern Contemporary con il maestro Nicola Bertelli.
+-   **Dal 2015 al 2017** — frequenta con l'insegnante Giovanna Staffoni un corso di Danza Jazz e di Dance on Heels (danza sui tacchi).
+-   **Dicembre 2014** — frequenta il corso di formazione per istruttori Zumba® Fitness, livello B2.
+-   **Marzo del 2017** — partecipa al corso di conversione Fitness Musicale CSEN diventando istruttore abilitato di Fitness Musicale.
+-   **Ottobre 2018** — partecipa al corso di formazione abilitante l’insegnamento (a bambini, ragazzi e adulti) della disciplina Progressive Ballet Technique® ideato da Marie Walton – Mahon (Royal Accademy of Dance Examiner), con rilascio di regolare attestato ed iscrizione all’elenco degli insegnanti abilitati.
+-   **Dal 2019** — è insegnante dei corsi di danza classica, moderna e body tonic presso _LAB Ballet ASD_.
