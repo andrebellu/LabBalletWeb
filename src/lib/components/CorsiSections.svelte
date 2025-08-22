@@ -85,3 +85,16 @@
         </div>
     </div>
 </div>
+
+<div class="relative w-full -mt-16 -scale-y-100 h-24">
+    <svg
+        class="absolute top-0 left-0 w-full"
+        viewBox="0 0 1440 100"
+        preserveAspectRatio="none"
+    >
+        <path
+            class="fill-[#dbdbdb]"
+            d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"
+        />
+    </svg>
+</div>

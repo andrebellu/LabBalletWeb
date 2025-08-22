@@ -2,6 +2,10 @@
     export let data;
 </script>
 
+<svelte:head>
+    <meta name="robots" content="noindex, nofollow" />
+</svelte:head>
+
 <section class="max-w-4xl mx-auto px-4 py-8">
     <div class="flex flex-col md:flex-row md:items-start gap-8">
         <img

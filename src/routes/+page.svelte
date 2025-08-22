@@ -25,21 +25,8 @@
     <CorsiSections />
 </div>
 
-<div class="relative">
-    <svg
-        class="absolute top-0 left-0 w-full"
-        viewBox="0 0 1440 120"
-        preserveAspectRatio="none"
-    >
-        <path
-            class="fill-[#f1f1f1]"
-            d="M0,0 C250,120 750,20 1440,80 L1440,0 L0,0 Z"
-        />
-    </svg>
-</div>
-
 <div
-    class="insegnanti-section pt-16 md:pt-32 pb-6 md:pb-10 bg-base-200 overflow-x-hidden"
+    class="insegnanti-section pt-8 md:pt-16 pb-6 md:pb-10 bg-base-200 overflow-x-hidden"
     id="insegnanti"
 >
     <div class="max-w-screen-lg mx-auto px-2 md:px-0">
