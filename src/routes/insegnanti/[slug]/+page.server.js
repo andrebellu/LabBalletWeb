@@ -1,6 +1,4 @@
 import { marked } from 'marked';
-import fs from 'fs';
-import path from 'path';
 import insegnanti from '$lib/data/insegnanti.json';
 
 marked.setOptions({
@@ -12,8 +10,6 @@ marked.setOptions({
 });
 
 export async function load({ params }) {
-    console.log('Loading insegnante:', params.slug);
-    console.log('Available insegnanti:', insegnanti);
     const insegnante = insegnanti.find(i => i.slug === params.slug);
     if (!insegnante) {
         return {
@@ -22,11 +18,10 @@ export async function load({ params }) {
         };
     }
 
-    const filePath = path.resolve(`src/lib/curricula/${params.slug}.md`);
     let curriculumHTML = '';
     try {
-        const markdown = fs.readFileSync(filePath, 'utf-8');
-        curriculumHTML = marked.parse(markdown);
+        const curriculumModule = await import(`$lib/curricula/${params.slug}.md?raw`);
+        curriculumHTML = marked.parse(curriculumModule.default);
     } catch (err) {
         curriculumHTML = '<p>Curriculum non disponibile.</p>';
     }
