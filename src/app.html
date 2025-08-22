@@ -2,26 +2,39 @@
 <html lang="it" data-theme="autumnCustom" id="html-root">
 
 <head>
-  <title>LABballet ASD</title>
-  <meta name="description"
-    content="Associazione di danza con corsi per tutte le età. Scopri i nostri insegnanti qualificati e gli orari dei corsi." />
   <meta charset="utf-8" />
-  <link rel="icon" href="%sveltekit.assets%/images/logo.webp" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- FontAwesome, se usato ovunque -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fallback meta tags -->
+  <title>LABballet ASD - Scuola di Danza Classica e Moderna a Dello (BS)</title>
+  <meta name="description"
+    content="Corsi di danza classica, moderna, contemporanea e fitness per bambini, ragazzi e adulti a Dello, Brescia. Insegnanti qualificati." />
 
-  <!-- Preconnect per i font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Favicon -->
+  <link rel="icon" href="%sveltekit.assets%/images/logo.webp" type="image/webp" />
+  <link rel="apple-touch-icon" href="%sveltekit.assets%/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- Preload critical fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+
+  <!-- DNS prefetch for CDNs -->
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
   %sveltekit.head%
 </head>
 
 <body data-sveltekit-preload-data="hover">
   <div style="display: contents">%sveltekit.body%</div>
+
+  <!-- Noscript fallback -->
+  <noscript>
+    <div style="padding: 20px; text-align: center;">
+      <h2>JavaScript Richiesto</h2>
+      <p>Per una migliore esperienza sul nostro sito, abilita JavaScript nel tuo browser.</p>
+    </div>
+  </noscript>
 </body>
 
 </html>

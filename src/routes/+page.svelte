@@ -7,7 +7,51 @@
     import Table from "$lib/components/Table.svelte";
 
     export let data;
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://labballet.it/",
+            },
+        ],
+    };
 </script>
+
+<svelte:head>
+    <!-- LocalBusiness Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "DanceSchool",
+            "name": "LABballet ASD",
+            "description": "Scuola di danza classica, moderna e fitness a Dello (BS)",
+            "url": "https://labballet.it",
+            "telephone": "+39-030-1234567",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Via Borgo Belvedere, 10",
+                "addressLocality": "Dello",
+                "addressRegion": "BS",
+                "postalCode": "25020",
+                "addressCountry": "IT"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "45.420184",
+                "longitude": "10.082708"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {JSON.stringify(breadcrumbSchema)}
+    </script>
+</svelte:head>
 
 <Hero />
 
