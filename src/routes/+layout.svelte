@@ -124,7 +124,10 @@
         rel="preload"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
         as="style"
-        onload="this.onload=null;this.rel='stylesheet'"
+        on:load={(e) => {
+            e.target.onload = null;
+            e.target.rel = "stylesheet";
+        }}
     />
     <noscript
         ><link
