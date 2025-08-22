@@ -27,9 +27,9 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "DanceSchool",
+            "@type": "Associazione di Danza",
             "name": "LABballet ASD",
-            "description": "Scuola di danza classica, moderna e fitness a Dello (BS)",
+            "description": "Associazione di danza classica, moderna e fitness a Dello (BS)",
             "url": "https://labballet.it",
             "telephone": "+39-030-1234567",
             "address": {

@@ -7,38 +7,44 @@
         "/": {
             title: "LABballet ASD - Associazione di Danza Classica e Moderna a Dello (BS)",
             description:
-                "Corsi di danza classica, moderna, contemporanea e fitness per bambini, ragazzi e adulti a Dello, Brescia. Insegnanti qualificati e ambienti professionali.",
+                "LABballet ASD è l'associazione di danza a Dello (Brescia) con corsi di classica, moderna, contemporanea e fitness per tutte le età. Scopri i nostri insegnanti qualificati e le attività per bambini, ragazzi e adulti.",
             canonical: "https://labballet.it/",
         },
         "/danza": {
             title: "Corsi di Danza Classica e Moderna | LABballet ASD Dello",
             description:
-                "Scopri i corsi di danza classica, moderna e contemporanea per tutte le età a Dello (BS). Lezioni professionali con insegnanti certificati.",
+                "Corsi di danza classica, moderna e contemporanea a Dello (BS): lezioni per bambini, ragazzi e adulti, principianti e avanzati. Insegnanti certificati e ambiente professionale.",
             canonical: "https://labballet.it/danza",
         },
         "/fitness": {
             title: "Corsi Fitness e Benessere | LABballet ASD Dello",
             description:
-                "Pilates, ginnastica dolce e corsi fitness per adulti a Dello (BS). Migliora il tuo benessere con i nostri programmi personalizzati.",
+                "Pilates, ginnastica dolce, pilates barre e fitness per adulti a Dello (Brescia). Programmi personalizzati per il benessere fisico e mentale, con istruttori esperti.",
             canonical: "https://labballet.it/fitness",
         },
         "/galleria": {
-            title: "Galleria Foto e Video | LABballet ASD Dello",
+            title: "Galleria Fotografica | LABballet ASD Dello",
             description:
-                "Guarda le foto dei nostri spettacoli, saggi di danza e momenti dei corsi presso LABballet ASD di Dello, Brescia.",
+                "Sfoglia la galleria fotografica di LABballet ASD: immagini di spettacoli, saggi, eventi e momenti speciali di LABballet a Dello (BS).",
             canonical: "https://labballet.it/galleria",
         },
         "/stage": {
             title: "Stage e Workshop di Danza | LABballet ASD",
             description:
-                "Stage intensivi e workshop di danza classica e moderna con maestri ospiti. Perfezionamento tecnico per allievi avanzati.",
+                "Partecipa agli stage e workshop di danza classica, moderna e contemporanea con maestri ospiti e professionisti del settore. Occasioni di crescita e perfezionamento a Dello (BS).",
             canonical: "https://labballet.it/stage",
         },
         "/insegnanti": {
-            title: "Insegnanti Qualificati | LABballet ASD Dello",
+            title: "Insegnanti di Danza e Fitness | LABballet ASD Dello",
             description:
-                "Il nostro team di insegnanti professionisti specializzati in danza classica, moderna, contemporanea e fitness.",
+                "Conosci il team di insegnanti LABballet ASD: professionisti specializzati in danza classica, moderna, contemporanea, fitness e pilates. Scopri i loro curriculum e la loro esperienza.",
             canonical: "https://labballet.it/insegnanti",
+        },
+        "/privacy-policy": {
+            title: "Privacy Policy | LABballet ASD Dello",
+            description:
+                "Informativa sulla privacy di LABballet ASD: scopri come trattiamo i tuoi dati personali e tuteliamo la tua riservatezza secondo la normativa vigente.",
+            canonical: "https://labballet.it/privacy-policy",
         },
     };
 
