@@ -19,7 +19,7 @@
         "/fitness": {
             title: "Corsi Fitness e Benessere | LABballet ASD Dello",
             description:
-                "Pilates, ginnastica dolce, pilates barre e fitness per adulti a Dello (Brescia). Programmi personalizzati per il benessere fisico e mentale, con istruttori esperti.",
+                "Ginnastica pilates barre, ginnastica pilates miofasciale posturale e body tonic per adulti a Dello (Brescia). Programmi personalizzati per il benessere fisico e mentale, con istruttori esperti.",
             canonical: "https://labballet.it/fitness",
         },
         "/galleria": {
@@ -37,7 +37,7 @@
         "/insegnanti": {
             title: "Insegnanti di Danza e Fitness | LABballet ASD Dello",
             description:
-                "Conosci il team di insegnanti LABballet ASD: professionisti specializzati in danza classica, moderna, contemporanea, fitness e pilates. Scopri i loro curriculum e la loro esperienza.",
+                "Conosci il team di insegnanti LABballet ASD: professionisti specializzati in danza classica, moderna, contemporanea, fitness e ginnastica pilates. Scopri i loro curriculum e la loro esperienza.",
             canonical: "https://labballet.it/insegnanti",
         },
         "/privacy-policy": {
@@ -81,7 +81,7 @@
     <meta name="description" content={currentMeta.description} />
     <meta
         name="keywords"
-        content="danza classica, danza moderna, fitness, pilates, dello brescia, corsi danza bambini, associazione danza, labballet"
+        content="danza classica, danza moderna, fitness, ginnastica pilates, dello brescia, corsi danza bambini, associazione danza, labballet"
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="LABballet ASD" />
