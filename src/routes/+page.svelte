@@ -20,36 +20,40 @@
             },
         ],
     };
+
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "SportsActivityLocation", // più corretto di "Associazione di Danza"
+        name: "LABballet ASD",
+        description:
+            "Associazione di danza classica, moderna e fitness a Dello (BS)",
+        url: "https://labballet.it",
+        telephone: "+39-030-1234567",
+        address: {
+            "@type": "PostalAddress",
+            streetAddress: "Via Borgo Belvedere, 10",
+            addressLocality: "Dello",
+            addressRegion: "BS",
+            postalCode: "25020",
+            addressCountry: "IT",
+        },
+        geo: {
+            "@type": "GeoCoordinates",
+            latitude: "45.420184",
+            longitude: "10.082708",
+        },
+    };
 </script>
 
 <svelte:head>
     <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Associazione di Danza",
-            "name": "LABballet ASD",
-            "description": "Associazione di danza classica, moderna e fitness a Dello (BS)",
-            "url": "https://labballet.it",
-            "telephone": "+39-030-1234567",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Via Borgo Belvedere, 10",
-                "addressLocality": "Dello",
-                "addressRegion": "BS",
-                "postalCode": "25020",
-                "addressCountry": "IT"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": "45.420184",
-                "longitude": "10.082708"
-            }
-        }
+        {@html JSON.stringify(organizationSchema)}
     </script>
 
+    <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
-        {JSON.stringify(breadcrumbSchema)}
+        {@html JSON.stringify(breadcrumbSchema)}
     </script>
 </svelte:head>
 

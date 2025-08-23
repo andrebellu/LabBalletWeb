@@ -7,13 +7,13 @@
         "/": {
             title: "LABballet ASD - Associazione di Danza Classica e Moderna a Dello (BS)",
             description:
-                "LABballet ASD è l'associazione di danza a Dello (Brescia) con corsi di classica, moderna, contemporanea e fitness per tutte le età. Scopri i nostri insegnanti qualificati e le attività per bambini, ragazzi e adulti.",
+                "LABballet ASD è l'associazione di danza a Dello (Brescia) con corsi di classica, moderna e fitness per tutte le età. Scopri i nostri insegnanti qualificati e le attività per bambini, ragazzi e adulti.",
             canonical: "https://labballet.it/",
         },
         "/danza": {
             title: "Corsi di Danza Classica e Moderna | LABballet ASD Dello",
             description:
-                "Corsi di danza classica, moderna e contemporanea a Dello (BS): lezioni per bambini, ragazzi e adulti, principianti e avanzati. Insegnanti certificati e ambiente professionale.",
+                "Corsi di danza classica e moderna a Dello (BS): lezioni per bambini, ragazzi e adulti, principianti e avanzati. Insegnanti certificati e ambiente professionale.",
             canonical: "https://labballet.it/danza",
         },
         "/fitness": {
@@ -33,12 +33,6 @@
             description:
                 "Partecipa agli stage e workshop di danza classica, moderna e contemporanea con maestri ospiti e professionisti del settore. Occasioni di crescita e perfezionamento a Dello (BS).",
             canonical: "https://labballet.it/stage",
-        },
-        "/insegnanti": {
-            title: "Insegnanti di Danza e Fitness | LABballet ASD Dello",
-            description:
-                "Conosci il team di insegnanti LABballet ASD: professionisti specializzati in danza classica, moderna, contemporanea, fitness e ginnastica pilates. Scopri i loro curriculum e la loro esperienza.",
-            canonical: "https://labballet.it/insegnanti",
         },
         "/privacy-policy": {
             title: "Privacy Policy | LABballet ASD Dello",
