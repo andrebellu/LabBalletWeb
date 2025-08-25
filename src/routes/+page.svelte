@@ -48,16 +48,12 @@
 <svelte:head>
     <!-- Organization / LocalBusiness Schema -->
     <script type="application/ld+json">
-    {JSON.stringify(organizationSchema)
-      .replace(/<\/script>/g, '<\\/script>')
-      .replace(/</g, '\\u003c')}
+        {JSON.stringify(organizationSchema)}
     </script>
 
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
-    {JSON.stringify(breadcrumbSchema)
-      .replace(/<\/script>/g, '<\\/script>')
-      .replace(/</g, '\\u003c')}
+        {JSON.stringify(breadcrumbSchema)}
     </script>
 </svelte:head>
 
