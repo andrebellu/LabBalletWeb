@@ -99,9 +99,9 @@
     <meta name="twitter:image" content={currentMeta.ogImage} />
 
     <!-- Structured Data -->
-    <script type="application/ld+json">
+    <!-- <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
-    </script>
+    </script> -->
 
     <!-- Preload critical resources -->
     {#if $page.url.pathname === "/"}
