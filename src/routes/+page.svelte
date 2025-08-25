@@ -45,17 +45,15 @@
     };
 </script>
 
-<svelte:head>
-    <!-- Organization / LocalBusiness Schema -->
+<!-- <svelte:head>
     <script type="application/ld+json">
         {JSON.stringify(organizationSchema)}
     </script>
 
-    <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
         {JSON.stringify(breadcrumbSchema)}
     </script>
-</svelte:head>
+</svelte:head> -->
 
 <Hero />
 
