@@ -5,6 +5,7 @@
     import CorsiSections from "$lib/components/CorsiSections.svelte";
     import WhatsappPopup from "$lib/components/WhatsappPopup.svelte";
     import Table from "$lib/components/Table.svelte";
+    import AnimationFrameSnow from "$lib/components/AnimationFrameSnow.svelte";
 
     export let data;
 
@@ -126,3 +127,5 @@
 </div>
 
 <Footer />
+
+<AnimationFrameSnow />
