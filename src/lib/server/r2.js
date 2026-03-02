@@ -1,6 +1,11 @@
 import { S3Client, ListObjectsV2Command } from '@aws-sdk/client-s3';
 import { R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME, CF_ACCOUNT_ID } from '$env/static/private';
 
+import { DOMParser } from '@xmldom/xmldom';
+if (typeof globalThis.DOMParser === 'undefined') {
+    globalThis.DOMParser = DOMParser;
+}
+
 export async function listR2Objects({ page = 1, limit = 20 }) {
     if (!R2_BUCKET_NAME) {
         throw new Error("R2_BUCKET_NAME is not defined");
