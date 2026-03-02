@@ -1,9 +1,12 @@
 import { S3Client, ListObjectsV2Command } from '@aws-sdk/client-s3';
 import { R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME, CF_ACCOUNT_ID } from '$env/static/private';
+import { DOMParser, Node } from '@xmldom/xmldom';
 
-import { DOMParser } from '@xmldom/xmldom';
 if (typeof globalThis.DOMParser === 'undefined') {
     globalThis.DOMParser = DOMParser;
+}
+if (typeof globalThis.Node === 'undefined') {
+    globalThis.Node = Node;
 }
 
 export async function listR2Objects({ page = 1, limit = 20 }) {
