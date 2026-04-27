@@ -1,6 +1,6 @@
 {
 	"name": "labballet",
-	"license": "MIT",
+	"license": "CC-BY-NC-4.0",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
