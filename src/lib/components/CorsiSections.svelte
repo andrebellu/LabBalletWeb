@@ -1,9 +1,10 @@
 <script>
     import { goto } from "$app/navigation";
+    import {reveal} from "$lib/actions/reveal.js";
 </script>
 
 <!-- Sezione Danza -->
-<div class="flex flex-col lg:flex-row-reverse">
+<div class="flex flex-col lg:flex-row-reverse" use:reveal>
     <div class="w-full lg:w-1/2">
         <img
             src="/images/corsi/classico.webp"
@@ -32,7 +33,7 @@
 </div>
 
 <!-- Sezione Fitness -->
-<div class="flex flex-col lg:flex-row">
+<div class="flex flex-col lg:flex-row" use:reveal>
     <div class="w-full lg:w-1/2">
         <img
             src="https://images.unsplash.com/photo-1591258370814-01609b341790?q=80&w=1080&auto=format&fit=crop"
@@ -61,7 +62,7 @@
 </div>
 
 <!-- Sezione Stage -->
-<div class="flex flex-col lg:flex-row-reverse">
+<div class="flex flex-col lg:flex-row-reverse" use:reveal>
     <div class="w-full lg:w-1/2">
         <img
             src="/images/corsi/tacchi.webp"

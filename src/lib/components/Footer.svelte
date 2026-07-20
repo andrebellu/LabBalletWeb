@@ -41,7 +41,7 @@
               target="_blank"
               class="hover:text-accent"
             >
-              Via Borgo Belvedere, 10
+              Via Borgo Belvedere, 2
             </a>
           </li>
           <li class="flex items-center gap-2">
