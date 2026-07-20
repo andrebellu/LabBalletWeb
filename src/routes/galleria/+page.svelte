@@ -5,13 +5,19 @@
     let images = [];
     let images2024 = [];
     let images2025 = [];
+    let images2026 = [];
 
     let currentPage2024 = 1;
     let currentPage2025 = 1;
+    let currentPage2026 = 1;
+
     let isLoading2024 = false;
     let isLoading2025 = false;
+    let isLoading2026 = false;
+
     let hasMore2024 = true;
     let hasMore2025 = true;
+    let hasMore2026 = true;
 
     let showModal = false;
     let modalImage = "";
@@ -23,11 +29,14 @@
     async function fillViewportIfNeeded() {
         let tries = 0;
         while (
-            ((activeTab === "2025" && hasMore2025) ||
-                (activeTab === "2024" && hasMore2024)) &&
+            (
+                (activeTab === "2025" && hasMore2025) ||
+                (activeTab === "2024" && hasMore2024) ||
+                (activeTab === "2026" && hasMore2026)
+            ) &&
             document.body.offsetHeight <= window.innerHeight + 100 &&
             tries < 10
-        ) {
+            ) {
             await loadImages();
             tries++;
         }
@@ -52,9 +61,7 @@
             if (isLoading2025 || !hasMore2025) return;
             isLoading2025 = true;
             try {
-                const res = await fetch(
-                    `/api/images?page=${currentPage2025}&limit=50`
-                );
+                const res = await fetch(`/api/images?year=2025&page=${currentPage2025}&limit=50`);
                 const data = await res.json();
                 if (res.ok) {
                     const prevLen = images2025.length;
@@ -71,12 +78,12 @@
             } finally {
                 isLoading2025 = false;
             }
-        } else {
+        } else if(activeTab === "2024") {
             if (isLoading2024 || !hasMore2024) return;
             isLoading2024 = true;
             try {
                 const res = await fetch(
-                    `/api/images?page=${currentPage2024}&limit=50`
+                    `/api/images?year=2024&page=${currentPage2024}&limit=50`
                 );
                 const data = await res.json();
                 if (res.ok) {
@@ -93,6 +100,29 @@
                 }
             } finally {
                 isLoading2024 = false;
+            }
+        } else if(activeTab === "2026") {
+            if (isLoading2026 || !hasMore2026) return;
+            isLoading2026 = true;
+            try {
+                const res = await fetch(
+                    `/api/images?year=2026&page=${currentPage2026}&limit=50`
+                );
+                const data = await res.json();
+                if (res.ok) {
+                    const prevLen = images2026.length;
+                    images2026 = [...images2026, ...data.gruppo2026];
+                    if (
+                        images2026.length === prevLen ||
+                        data.gruppo2026.length === 0
+                    ) {
+                        hasMore2026 = false;
+                    } else {
+                        currentPage2026++;
+                    }
+                }
+            } finally {
+                isLoading2026 = false;
             }
         }
     }
@@ -180,6 +210,18 @@
 <!-- Tab -->
 <div class="flex border-b border-gray-300 mb-4">
     <button
+            class={`px-4 py-2 ${activeTab === "2024" ? "border-b-2 border-primary font-bold" : ""}`}
+            on:click={async () => {
+                activeTab = "2024";
+                if (images2024.length === 0 && hasMore2024) {
+                    await loadImages();
+                }
+                await fillViewportIfNeeded();
+            }}
+    >
+        📺 Ci vediamo in tv
+    </button>
+    <button
         class={`px-4 py-2 ${activeTab === "2025" ? "border-b-2 border-primary font-bold" : ""}`}
         on:click={async () => {
             activeTab = "2025";
@@ -192,16 +234,16 @@
         ✨ In punta di fiaba
     </button>
     <button
-        class={`px-4 py-2 ${activeTab === "2024" ? "border-b-2 border-primary font-bold" : ""}`}
-        on:click={async () => {
-            activeTab = "2024";
-            if (images2024.length === 0 && hasMore2024) {
+            class={`px-4 py-2 ${activeTab === "2026" ? "border-b-2 border-primary font-bold" : ""}`}
+            on:click={async () => {
+            activeTab = "2026";
+            if (images2026.length === 0 && hasMore2026) {
                 await loadImages();
             }
             await fillViewportIfNeeded();
         }}
     >
-        📺 Ci vediamo in tv
+        🦖 Un museo che danza
     </button>
 </div>
 
@@ -251,11 +293,32 @@
                 </button>
             </div>
         {/each}
+        {:else if activeTab === "2026"}
+        {#each images2026 as link, i}
+            <div
+                    class="overflow-hidden rounded-xl shadow hover:shadow-lg transition transform hover:scale-105"
+            >
+                <button
+                        type="button"
+                        class="w-full h-full p-0 bg-transparent border-none cursor-pointer focus:outline-none"
+                        on:click={() => {
+                        images = images2026;
+                        openModal(link, i);
+                    }}
+                        aria-label="Apri immagine ingrandita"
+                >
+                    <ImageWithSkeleton
+                            src={link}
+                            alt={`Foto 2026 - ${i + 1}`}
+                    />
+                </button>
+            </div>
+        {/each}
     {/if}
 </div>
 
 <!-- Loading indicator -->
-{#if (activeTab === "2025" && isLoading2025) || (activeTab === "2024" && isLoading2024)}
+{#if (activeTab === "2025" && isLoading2025) || (activeTab === "2024" && isLoading2024) || (activeTab === "2026" && isLoading2026)}
     <div class="text-center py-8">
         <div
             class="inline-block animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary"
