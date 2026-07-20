@@ -84,15 +84,22 @@
       Conosci i nostri insegnanti, esperti in vari stili di danza.
     </p>
     <div
-      class="insegnanti flex flex-row gap-2 md:grid md:grid-cols-5 md:gap-6 md:justify-center md:overflow-x-visible md:w-fit md:mx-auto overflow-x-auto scroll-snap-x scroll-smooth"
+            class="insegnanti flex flex-row md:flex-wrap md:justify-center gap-2 md:gap-8 md:overflow-x-visible md:w-full md:max-w-5xl md:mx-auto overflow-x-auto scroll-snap-x scroll-smooth"
     >
       {#each data.insegnanti as insegnante}
-        <InsegnantiCard
-          name={insegnante.name}
-          description={insegnante.description}
-          photo={insegnante.photo}
-          slug={insegnante.slug}
-        />
+        <!--
+          Usiamo solo Flexbox:
+          - shrink-0 e snap-center per lo scroll da mobile
+          - md:basis-[30%] (opzionale) per assicurarci che ne stiano 3 per riga su desktop
+        -->
+        <div class="shrink-0 snap-center flex justify-center">
+          <InsegnantiCard
+                  name={insegnante.name}
+                  description={insegnante.description}
+                  photo={insegnante.photo}
+                  slug={insegnante.slug}
+          />
+        </div>
       {/each}
     </div>
   </div>
