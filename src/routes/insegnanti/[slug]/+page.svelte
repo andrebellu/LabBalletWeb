@@ -11,7 +11,7 @@
         <img
             src={data.insegnante.photo}
             alt={data.insegnante.name}
-            class="rounded-lg w-64 h-64 object-cover mx-auto md:mx-0 mb-6 md:mb-0 flex-shrink-0"
+            class="rounded-lg w-64 h-64 object-cover mx-auto md:mx-0 mb-6 md:mb-0 shrink-0"
         />
         <div class="flex-1">
             <h1 class="text-4xl font-bold mb-2">

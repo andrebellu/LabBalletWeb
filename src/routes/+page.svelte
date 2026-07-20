@@ -76,7 +76,7 @@
   class="insegnanti-section pt-8 md:pt-16 pb-6 md:pb-10 bg-base-200 overflow-x-hidden"
   id="insegnanti"
 >
-  <div class="max-w-screen-lg mx-auto px-2 md:px-0">
+  <div class="w-full mx-auto px-2 md:px-0">
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-4 md:mb-8">
       I nostri Insegnanti
     </h2>
@@ -84,7 +84,7 @@
       Conosci i nostri insegnanti, esperti in vari stili di danza.
     </p>
     <div
-      class="insegnanti flex flex-row gap-2 md:grid md:grid-cols-3 md:gap-6 md:justify-center md:overflow-x-visible md:w-fit md:mx-auto overflow-x-auto scroll-snap-x scroll-smooth"
+      class="insegnanti flex flex-row gap-2 md:grid md:grid-cols-5 md:gap-6 md:justify-center md:overflow-x-visible md:w-fit md:mx-auto overflow-x-auto scroll-snap-x scroll-smooth"
     >
       {#each data.insegnanti as insegnante}
         <InsegnantiCard
