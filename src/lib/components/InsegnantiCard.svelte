@@ -8,8 +8,8 @@
 <div
     class="card bg-base-100 shadow-md hover:shadow-lg transition-shadow duration-300 p-2 mb-4 w-64 h-82 shrink-0 scroll-snap-start"
 >
-    <figure class="flex justify-center mt-4">
-        <div class="avatar p-2">
+    <figure class="flex justify-center">
+        <div class="avatar p-4">
             <div
                 class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2"
             >

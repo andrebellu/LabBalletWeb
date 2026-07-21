@@ -126,7 +126,7 @@
                             >16:30</span
                         >
                         <span class="whitespace-normal break-words text-left"
-                            >GiocoDanza</span
+                            >Giocodanza®</span
                         >
                     </div>
                     <div class="flex border-b border-base-200 pb-1">
