@@ -80,5 +80,30 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="mt-10 pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-neutral-content/70"
+    >
+      <p>
+        © {new Date().getFullYear()} LABballet ASD ·
+        <a
+          href="/privacy-policy"
+          class="hover:text-accent underline underline-offset-2"
+        >
+          Privacy Policy
+        </a>
+      </p>
+      <p>
+        Sito realizzato da
+        <a
+          href="https://andrebellu.github.io/portfolio/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-accent underline underline-offset-2"
+        >
+          Andrea Bellu
+        </a>
+      </p>
+    </div>
   </div>
 </footer>
