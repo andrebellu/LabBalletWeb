@@ -120,7 +120,7 @@
       Conosci i nostri insegnanti, esperti in vari stili di danza.
     </p>
     <div
-            class="insegnanti flex flex-row md:flex-wrap md:justify-center gap-2 md:gap-8 md:overflow-x-visible md:w-full md:max-w-5xl md:mx-auto overflow-x-auto scroll-snap-x scroll-smooth"
+            class="insegnanti flex flex-row md:flex-wrap md:justify-center gap-2 md:gap-8 md:overflow-x-visible md:w-full md:max-w-5xl md:mx-auto overflow-x-auto overflow-y-hidden scroll-snap-x scroll-smooth"
     >
       {#each data.insegnanti as insegnante, i}
         <div class="shrink-0 snap-center flex justify-center" use:reveal={{ delay: i * 90 }}>

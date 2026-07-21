@@ -20,6 +20,8 @@
 
     $: if ($page.url.pathname || $page.url.hash) open = false;
 
+    $: transparent = $page.url.pathname === "/" && !scrolled && !open;
+
     const links = [
         { href: "/danza", label: "Danza" },
         { href: "/fitness", label: "Fitness" },
@@ -41,9 +43,9 @@
 
 <nav
     class="fixed top-0 inset-x-0 z-[100] transition-all duration-500
-           {scrolled || open
-        ? 'bg-white/90 backdrop-blur-md shadow-sm text-neutral-900'
-        : 'bg-gradient-to-b from-black/50 to-transparent text-white'}"
+           {transparent
+        ? 'bg-gradient-to-b from-black/50 to-transparent text-white'
+        : 'bg-white/90 backdrop-blur-md shadow-sm text-neutral-900'}"
     aria-label="Menu principale"
 >
     <div
@@ -120,9 +122,9 @@
                 <a
                     href="/#orari"
                     class="btn btn-ghost border px-4 py-2 text-[11px] uppercase tracking-[0.18em] shadow-none transition-colors hover:shadow-none
-                          {scrolled
-                        ? 'border-neutral-900 text-neutral-900 hover:border-primary hover:bg-primary hover:text-primary-content'
-                        : 'border-white/70 text-white hover:border-primary hover:bg-primary hover:text-primary-content'}"
+                          {transparent
+                        ? 'border-white/70 text-white hover:border-primary hover:bg-primary hover:text-primary-content'
+                        : 'border-neutral-900 text-neutral-900 hover:border-primary hover:bg-primary hover:text-primary-content'}"
                 >
                     Orari
                 </a>

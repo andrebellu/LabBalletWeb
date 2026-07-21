@@ -7,12 +7,13 @@
 ## Esperienze Lavorative
 
 - **2006 – attuale | Varie scuole (Brescia e Milano)**: Insegnante e coreografa di danza Classica, Modern Jazz e Heels, preparando le allieve al raggiungimento di traguardi quali l'ammissione in accademie di prestigio.
-- **2016 | Compagnia “U Betta Work Crew” di Dolores Ninja Parisi**: Ballerina selezionata per entrare nella compagnia.
 - **Estate 2015 | Stage internazionale di Sale Marasino**: Docente per la disciplina Heels.
+- **2016 | Compagnia “U Betta Work Crew” di Dolores Ninja Parisi**: Ballerina selezionata per entrare nella compagnia.
 - **Compagnia Kormat**: Performer per il festival “La Strada” di Brescia; ballerina negli spettacoli del carnevale di Fano ("Pulcinella" nel 2010, "Studio 54" nel 2011) e nello spettacolo “Triquadri” per il Festival “Quasi Solo”.
 - **RAI 2**: Ballerina nel corpo di ballo della trasmissione televisiva CDLIVE.
 - **Teatro Manzoni, Milano**: Ballerina nello spettacolo teatrale presentato da Paolo Limiti.
 - **Video Musicali e Pubblicità**: Ballerina nel corpo di ballo per il video “Pump It Tap” di Danzel, per lo spot Pringles, per il video “E' necessario” dei Jat Lag (con Raf e Max Gazzè), e per il video musicale “May Day” del gruppo emergente Minima Beat (prodotto da Warner).
+- **2021 - attuale | LAB Ballet ASD**: Direttrice artistica e insegnante dei corsi di danza classica, modern jazz e heels.
 
 ## Formazione e Competenze Artistiche
 

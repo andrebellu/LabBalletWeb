@@ -18,6 +18,7 @@
 - **2020 | Compagnia TEATRANTI di Katiuscia Armanni**: Ballerina nello spettacolo "AL CASTELLO CON SHAKESPEARE" presso il castello di Bornato.
 - **2017 – 2018 | Compagnia Quattour**: Ballerina per diversi spettacoli sul territorio bresciano, tra cui "PLAY" e "ALLO SPECCHIO".
 - **2015 – attuale | Svariate sedi (Teatro Sociale Brescia, Cristal Salò, Teatro Gloria Montichiari)**: Coreografa di gruppo e per solisti (da allievi di 4 anni fino a corsi per adulti) per saggi di fine anno e preparazione ad audizioni/concorsi (es. preparazione allieva solista per concorso WE DANCE, classificata al 3° posto).
+- **2021 - attuale | LAB Ballet ASD**: Insegnante di danza classica, danza moderna, GiocoDanza® e pilates barre.
 
 ## Formazione e Competenze Artistiche
 
