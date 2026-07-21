@@ -1,5 +1,4 @@
 <script>
-    // 1. IL DIZIONARIO DATI (Singola fonte di verità)
     const orari = ["9:30", "16:30", "17:00", "17:30", "18:00", "18:30", "18:45", "19:00", "20:00", "21:00"];
     const giorni = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì"];
 
@@ -41,13 +40,11 @@
         }
     };
 
-    // Funzione helper per verificare se ci sono corsi in un dato giorno (per la vista mobile)
     const hasCoursesInDay = (giorno) => {
         return orari.some(orario => corsi[orario] && corsi[orario][giorno]);
     };
 </script>
 
-<!-- GENERAZIONE MOBILE (Card orizzontali) -->
 <div class="md:hidden pb-8">
     <div class="relative">
         <div class="overflow-x-auto snap-x snap-mandatory scroll-smooth whitespace-nowrap pb-6 px-2 space-x-4 hide-scrollbar flex flex-row items-center">
@@ -82,7 +79,6 @@
                 </div>
             {/each}
 
-            <!-- Sabato Fisso (Mobile) -->
             <div class="min-w-[280px] sm:min-w-[320px] inline-flex flex-col snap-start bg-base-100 rounded-box shadow border border-base-300 p-3 sm:p-4 h-80">
                 <h4 class="font-bold text-base sm:text-lg text-center mb-3 sm:mb-4 border-b border-base-300 pb-2">Sabato</h4>
                 <div class="whitespace-pre-line flex justify-center items-center h-full text-center text-sm font-medium opacity-80">
@@ -96,15 +92,12 @@
     </div>
 </div>
 
-<!-- GENERAZIONE DESKTOP (Tabella semantica) -->
 <div class="hidden md:block rounded-box border border-base-300 bg-base-100 shadow-md overflow-hidden">
-    <!-- Aggiunto table-fixed per forzare la distribuzione equa dello spazio -->
     <table class="table table-fixed w-full border-collapse text-xs lg:text-sm xl:text-base">
         <caption class="sr-only">Tabella orari settimanali dei corsi di danza e fitness</caption>
 
         <thead class="bg-base-200 text-base-content border-b border-base-content/20">
         <tr>
-            <!-- L'orario si prende il 10% dello spazio, ogni giorno il 15%, il sabato il 15% (Totale 100%) -->
             <th scope="col" class="border-r border-base-content/10 p-2 lg:p-3 w-[10%] text-center">Orario</th>
             {#each giorni as giorno}
                 <th scope="col" class="border-r border-base-content/10 p-2 lg:p-3 w-[15%] text-center">{giorno}</th>
@@ -117,12 +110,10 @@
         {#each orari as orario, index}
             <tr class="hover transition-colors">
 
-                <!-- Colonna Orari -->
                 <th scope="row" class="border-r border-base-content/10 font-medium p-2 lg:p-3 whitespace-nowrap text-center">
                     <time datetime={orario}>{orario}</time>
                 </th>
 
-                <!-- Colonne Giorni (Lunedì-Venerdì) -->
                 {#each giorni as giorno}
                     {#if corsi[orario] && corsi[orario][giorno]}
                         <td class="border-r border-base-content/10 p-2 lg:p-3 text-center break-words">
@@ -135,7 +126,6 @@
                     {/if}
                 {/each}
 
-                <!-- Colonna Sabato (Calcola il rowspan dinamicamente solo sulla prima riga) -->
                 {#if index === 0}
                     <td rowspan={orari.length} class="align-middle p-2 lg:p-3 border-l border-base-content/10">
                         <div class="whitespace-pre-line text-center text-sm font-semibold opacity-80 leading-relaxed">
