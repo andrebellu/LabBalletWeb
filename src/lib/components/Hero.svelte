@@ -55,12 +55,12 @@
                 class="w-20 md:w-32 h-0.5 bg-accent my-2 animate-scale-x animation-delay-400"
             ></div>
 
-            <a
+            <!--             <a
                 href="#corsi"
                 class="btn btn-primary px-8 py-3 text-base md:text-lg rounded-full mt-2 transition-all duration-300 transform hover:scale-105 hover:shadow-[0_0_20px_rgba(var(--color-primary),0.6)] animate-fade-in-up animation-delay-600 border-none bg-gradient-to-r from-primary to-secondary text-white"
             >
                 Scopri di più
-            </a>
+            </a> -->
         </div>
     </div>
 

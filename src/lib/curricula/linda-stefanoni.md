@@ -1,100 +1,39 @@
--   **1999** Inizia a studiare danza classica all’età di quattro anni presso la scuola professionale “Endas Ensemble Gloria Barbieri” di Sasso Marconi (Bologna) con Elisa Eutizzi e Marika Mazzetti. Frequenta diversi stage con Sarah Taylor.
+## Qualifiche e Certificazioni
 
--   **2010** Segue stage di danza contemporanea e classica con insegnanti internazionali tra cui Federico Betti.
+- Diploma di insegnante di danza classica (metodologia Vaganova, dall'avviamento fino al 3° corso) presso IDA - International Dance Association, Ravenna (biennio 2014-2016, con tesi di specializzazione).
+- Diploma di Maestro di Giocodanza® per primo (3-5 anni) e secondo ciclo (6-7 anni) presso SSD GIDAS DANZA (2017-2018).
+- Diploma di insegnante di Pilates Basic Matwork riconosciuto ASI/CONI (voto 30/30), conseguito presso FIF - Federazione Italiana Fitness, Ravenna (agosto 2019).
+- Certificato di specializzazione in Fisiodanza (Master di sbarra a terra, stretching e lavoro con piccoli attrezzi) presso l'Ateneo della danza di Siena (2020).
+- Diploma di insegnante di Pilates Props (Ring, Roller, Softball, Elastiband) presso FIF, Ravenna (2020).
+- Diploma di insegnante di Pilates in gravidanza e terza età presso FIF, Ravenna (2023).
+- Diploma di insegnante di Flexibility presso FIF, Ravenna (2023).
+- Diploma di insegnante di Pilates Aereo presso FIF, Cesena (2025).
+- Diploma di insegnante di Total Body Workout Aereo presso FIF, Cesena (2025).
+- Diploma di insegnante di Propedeutica Modern presso IDA, Ravenna (2025).
+- Diploma di maturità come Tecnico della Grafica Pubblicitaria (voto 96/100) presso IIS "L.Fantini", Vergato BO (2014).
 
--   **2011** Incrementa lo studio della danza con la disciplina del pilates matwork e piccoli attrezzi.
+## Esperienze Lavorative
 
--   **2012** Continua lo studio della danza classica presso Archè Danza con l’insegnante Melissa Roda (docente presso IDA e FIF, Ravenna).
+- **2024 – 2025 | Compagnia DreaMusical**: Ballerina (parte dell'ensemble) nello spettacolo "Kinky Boots".
+- **2020 | Compagnia TEATRANTI di Katiuscia Armanni**: Ballerina nello spettacolo "AL CASTELLO CON SHAKESPEARE" presso il castello di Bornato.
+- **2017 – 2018 | Compagnia Quattour**: Ballerina per diversi spettacoli sul territorio bresciano, tra cui "PLAY" e "ALLO SPECCHIO".
+- **2015 – attuale | Svariate sedi (Teatro Sociale Brescia, Cristal Salò, Teatro Gloria Montichiari)**: Coreografa di gruppo e per solisti (da allievi di 4 anni fino a corsi per adulti) per saggi di fine anno e preparazione ad audizioni/concorsi (es. preparazione allieva solista per concorso WE DANCE, classificata al 3° posto).
 
--   **2012** Si avvicina allo studio della danza contemporanea e moderna con l’insegnante Sara Mazzetti di Archè Danza.
+## Formazione e Competenze Artistiche
 
--   **2014** Frequenta la scuola di danza Leggere Strutture (Bologna) nella quale svolge lezioni di classico con Mattia Gandini (coreografo e direttore artistico) con le allieve del corso di formazione.
-
--   **2012/2014** Partecipa a diversi concorsi di gruppo di danza classica e contemporanea, e prepara concorsi da solista di repertorio classico.
-
--   **Gennaio 2015** Supera l’audizione con Marco Batti (direttore Ateneo di Siena e docente ABT) per accedere al corso di insegnanti di danza classica organizzato dall’IDA, (International Dance Association) per formare insegnanti dall’avviamento alla danza fino al terzo corso di tecnica accademica di Tecnica Vaganova.
-
--   **Aprile 2016** Partecipa con il gruppo di moderno della Scuola Archè Danza al concorso KAOS di Firenze vincendo un premio per la coreografia “Il Tedio”.
-
--   **Ottobre 2016** Frequenta le lezioni di danza contemporanea tenute da Valentina Benedetti.
-
--   **2017** Frequenta diversi stage di aggiornamento con artisti internazionali come Angelo Monaco, e stage di danza contemporanea con Giacomo Quarta.
-
--   **Settembre 2017** Frequenta il corso di aggiornamento di Luisa Signorelli a Roma di 1 e 2 livello di danza classica (dalla propedeutica ai corsi avanzati).
-
--   **2017/2018** Inizia a frequentare le lezioni di classico professionisti nella scuola Area Dance di Milano.
-
--   **2017-2018** Collabora in qualità di ballerina con la compagnia Quattour per diversi spettacoli nel territorio bresciano, fra cui “PLAY” e “ALLO SPECCHIO”.
-
--   **Aprile 2018** Frequenta workshop di danza contemporanea presso la scuola Ocdp con Michele Oliva e Rocco Suma.
-
--   **Ottobre 2018 - Giugno 2019** Accede al corso Professional Weekend della scuola Ocdp di Michele Oliva e Francesca Dario, studiando tecnica classica e contemporanea con i docenti: Marco Fagioli (Scala di Milano), Federica Esposito, Rocco Suma, Giovanni Scura, Francesca Dario e Michele Oliva nel quale ottiene una borsa di studio e dove ha la possibilità di esibirsi in uno showcase finale.
-
--   **2019 - in corso** Inizia a frequentare regolarmente le lezioni di classico avanzato con Matteo Corbetta (diplomato Scala di Milano e American Ballet) a Brescia.
-
--   **Agosto 2019** Presso il centro FIF (Federazione Italiana Fitness) a Ravenna consegue il diploma di insegnante di Pilates Basic Matwork con valutazione finale di 30/30.
-
--   **Ottobre 2019 – Febbraio 2020** Frequenta il corso Esplorazioni contemporanee condotto da Laura Ziccardi (insegnante Aida Milano) e Marta Molinari, ed ha la possibilità di studiare con: Federica Esposito, Laura Bogni, Manfredi Perego, Marco Laudani, Marta Molinari e Laura Ziccardi, Francesco Gammino.
-
--   **Ottobre 2019 – Febbraio 2020** Frequenta i workshop tenuti da escape danceproject a Brescia, seguendo i seminari di didattica e metodologia della danza e lezioni di classico con Matteo Corbetta, ai laboratori di danza contemporanea/moderna con Noemi della Vecchia e Gloria Ferrari (Esklan Art's Factory), Giovanni Gava e Claudia Bosco.
-
--   **Aprile 2020** Segue i seminari di formazione per insegnanti online tenuti da Marco Batti (Ateneo della danza di Siena) relativi all'endehors (conoscenza anatomia ed esercizi per gli allievi) e all'alluce valgo (problemi e accorgimenti).
-
--   **Maggio-Giugno 2020** Segue il corso di formazione per insegnanti online tenuto da Marco Batti (Ateneo della danza di Siena) di Fisiodanza, seguendo 3 diversi master di cui: sbarra a terra, stretching e lavoro con i piccoli attrezzi.
-
--   **Settembre 2020** Collabora con la compagnia TEATRANTI di Katiuscia Armanni in qualità di ballerina nello spettacolo “AL CASTELLO CON SHAKESPEARE” al castello di Bornato.
-
--   **2015 - ad oggi** Ha creato coreografie di gruppo e per solisti per allievi dai 4 anni ai corsi per adulti andando in scena per i saggi di fine anno al teatro sociale a Brescia, al Cristal di Salò, al teatro Gloria di Montichiari e altri, ha inoltre preparato un'allieva ad interpretare la variazione solista della fata fior di farina per il conscorso WE DANCE a Villafranca di Verona classificandosi al terzo posto.
-
--   **Novembre 2020** Segue un aggiornamento per insegnanti di Propedeutica con l'insegnante Letizia Fabbrucci (insegnante di propedeutica al Teatro alla Scala).
-
--   **Febbraio 2021** Segue un aggiornamento per insegnanti di danza moderna con Alex Imburgia.
-
--   **Marzo 2021** Segue un aggiornamento per insegnanti di impostazione punte con Brigida Bossoni (prima ballerina al Teatro alla Scala, docente di classico specializzata tecnica punte).
-
--   **Luglio 2021** Segue un corso di aggiornamento con gli insegnanti dell'Operà di Parigi Géraldine Wiart e Karl Paquette presso la scuola La Maison Accademia di Danza a Roma.
-
--   **2022/23/24/25** Segue corsi di aggiornamento Pilates matwork con il maestro Donato de Bartolomeo.
-
--   **2022** Segue stage di danza contemporanea con la compagnia Vidavé e Bellanda a Brescia.
-
--   **Marzo 2023** Segue il corso di Pilates in gravidanza e terza età con Sara Sergi (Federazione italiana fitness Ravenna).
-
--   **Aprile 2023** Segue il master di Flexibility con Andrea Neyroz (Federazione italiana fitness Ravenna).
-
--   **2024** Segue il corso per insegnanti di Pilates Barre con Elisabetta Cinelli (Federazione italiana fitness Ravenna).
-
--   **2024** Segue stage di danza moderna con Abby Silva Gavezzoli, segue regolarmente l'aggiornamento per insegnanti del metodo Giocodanza, segue seminari Ida per aggiornamento insegnanti danza classica.
-
--   **2024/25** Si esibisce come parte dell'ensemble nello Spettacolo "Kinky Boots" insieme alla compagnia DreaMusical.
-
--   **2025** Segue il corso di formazione Pilates e Lombalgia di Sara Sergi (FIF).
-
--   **2025** Segue il corso di formazione Pilates Aereo con Viviana Fabozzi (FIF).
-
--   **2025** Segue il corso di formazione Total body workout Aereo con Viviana Fabozzi (FIF).
-
-### Istruzione e formazione
-
--   **Tecnico della Grafica Pubblicitaria** conseguito presso Istituto d'istruzione Superiore “L.Fantini” - Vergato (BO).
--   **Diploma di maturità** conseguito con voto 96/100 nel 2014.
-
--   **2014-2016** Diploma di insegnante di danza classica con presentazione della tesi “Studio dal punto di vista psicologico di una bambina che subisce un arresto forzato dell'attività di danza classica a causa di un problema fisico” conseguito presso IDA (International Dance Association) Ravenna (RA). Acquisita la qualifica di Insegnamento Danza Classica dai corsi di avviamento alla danza fino al 3° corso della metodologia Vaganova.
-
--   **2017-2018** Presso la scuola SSD GIDAS DANZA, Diploma di Maestro di Giocodanza® per primo (3-5 anni) e secondo ciclo (6-7 anni).
-
--   **2019** Intraprendo il percorso nel mondo dell'insegnamento del Pilates presso FIF – Federazione Italiana Fitness (Ravenna) con il Corso di formazione professionale di Pilates riconosciuto da Asi/Coni. Diploma di insegnante di Pilates basic matwork conseguito con voto 30/30.
-
--   **2020**
-
-    -   **Ateneo della danza di Siena**: Master di sbarra a terra, stretching e lavoro con piccoli attrezzi. Certificato di specializzazione in Fisiodanza.
-    -   **FIF – Federazione Italiana Fitness (Ravenna)**: Corso di formazione di Pilates Props (Ring-Roller-Softball-Elastiband). Diploma di insegnante di Pilates Props.
-
--   **2023**
-
-    -   **FIF – Federazione Italiana Fitness (Ravenna)**: Corso di formazione di Pilates in gravidanza e terza età. Diploma di insegnante di Pilates in gravidanza e terza età.
-    -   **FIF – Federazione Italiana Fitness (Ravenna)**: Corso di formazione di Flexibility. Diploma di insegnante di Flexibility.
-
--   **2025**
-    -   **FIF – Federazione Italiana Fitness (Cesena)**: Corso di formazione di Pilates Aereo. Diploma di insegnante di Pilates Aereo.
-    -   **FIF – Federazione Italiana Fitness (Cesena)**: Corso di formazione di Total Body Workout Aereo. Diploma di insegnante di Total Body Workout Aereo.
+- Inizia lo studio della danza classica nel 1999 all'età di quattro anni presso la scuola professionale “Endas Ensemble Gloria Barbieri” (Sasso Marconi, BO) con Elisa Eutizzi e Marika Mazzetti.
+- **Dal 2010 al 2011:** Segue stage di danza contemporanea e classica (tra cui Federico Betti) e si avvicina alla disciplina del pilates matwork e piccoli attrezzi.
+- **Dal 2012 al 2014:** Continua la danza classica presso Archè Danza con Melissa Roda (docente IDA e FIF) e inizia lo studio della danza contemporanea e moderna con Sara Mazzetti. Partecipa a diversi concorsi, preparandosi anche nel repertorio classico solista.
+- **2014:** Studia classico con il coreografo e direttore artistico Mattia Gandini presso la scuola Leggere Strutture (Bologna).
+- **2016:** Vince un premio per la coreografia "Il Tedio" al concorso KAOS di Firenze con il gruppo di moderno di Archè Danza. Frequenta lezioni di danza contemporanea con Valentina Benedetti.
+- **2017 – 2018:** Studia classico livello professionisti presso Area Dance di Milano. Frequenta stage di aggiornamento con Angelo Monaco e Giacomo Quarta (contemporanea), e il corso di 1° e 2° livello di danza classica con Luisa Signorelli a Roma.
+- **2018 – 2019:** Accede al corso Professional Weekend della scuola Ocdp, studiando tecnica classica e contemporanea con docenti quali Marco Fagioli (Scala di Milano), Federica Esposito, Rocco Suma, Giovanni Scura, Francesca Dario e Michele Oliva. Ottiene una borsa di studio ed esibizione in showcase finale.
+- **2019 – in corso:** Frequenta regolarmente lezioni di danza classica avanzata con il Maestro Matteo Corbetta a Brescia.
+- **2019 – 2020:** Frequenta il corso "Esplorazioni contemporanee" (con Laura Ziccardi, Marta Molinari, Marco Laudani, Manfredi Perego, ecc.) e workshop intensivi di Escape danceproject, unendo seminari di didattica della danza e laboratori coreografici.
+- **2020 – 2021:** Segue seminari intensivi per insegnanti riguardanti anatomia (endehors, alluce valgo) tenuti da Marco Batti; aggiornamenti di propedeutica (Letizia Fabbrucci, Teatro alla Scala), moderna (Alex Imburgia), tecnica punte (Brigida Bossoni, Teatro alla Scala).
+- **2021 – 2025 (Stage e Masterclass continui):**
+    - Partecipa a corsi di aggiornamento con Géraldine Wiart e Karl Paquette (Opéra di Parigi).
+    - Frequenta costantemente aggiornamenti di Pilates matwork con Donato de Bartolomeo (2022-2025).
+    - Approfondisce la danza contemporanea con stage della compagnia Vidavé e Bellanda (2022) e danza moderna con Abby Silva Gavezzoli (2024).
+    - Aggiorna le proprie competenze didattiche attraverso il corso per insegnanti di Pilates Barre con Elisabetta Cinelli (2024), seminari continui del metodo Giocodanza® e seminari IDA per la danza classica.
+    - Partecipa a corsi specializzanti FIF su Pilates e Lombalgia con Sara Sergi (2025).

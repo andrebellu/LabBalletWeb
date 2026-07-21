@@ -18,7 +18,7 @@
     <div class="md:w-1/2 text-center md:text-left">
         <h3 class="text-3xl font-bold mb-2">{corso.title}</h3>
         <p class="text-gray-600 mb-4">{corso.shortDescription}</p>
-        <button on:click={toggle} class="btn btn-primary">
+        <button on:click={toggle} class=" btn btn-primary">
             {isOpen ? "Chiudi" : "Scopri di più"}
         </button>
     </div>

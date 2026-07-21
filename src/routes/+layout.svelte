@@ -150,13 +150,8 @@
 </svelte:head>
 
 <div class="min-h-screen">
-    {#if $page.url.pathname !== "/privacy-policy"}
-        <Navbar />
-    {/if}
-    <main
-        class:pt-24={$page.url.pathname !== "/" &&
-            $page.url.pathname !== "/privacy-policy"}
-    >
+    <Navbar />
+    <main class:pt-24={$page.url.pathname !== "/"}>
         <slot />
     </main>
 </div>

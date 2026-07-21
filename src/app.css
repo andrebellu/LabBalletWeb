@@ -94,8 +94,32 @@ html::-webkit-scrollbar {
     @apply md:text-white hover:text-red-500 font-bold text-black;
 }
 
+.curriculum h2 {
+    @apply text-2xl font-bold text-primary mt-8 mb-3 pb-2 border-b border-base-300 first:mt-0 scroll-mt-32;
+}
+
+.curriculum h3 {
+    @apply text-xl font-semibold mt-6 mb-2 scroll-mt-32;
+}
+
+.curriculum p {
+    @apply mb-4 leading-relaxed;
+}
+
+.curriculum ul {
+    @apply mb-4 space-y-2;
+}
+
+.curriculum ul ul {
+    @apply mt-2 mb-0;
+}
+
 .curriculum li {
-    @apply list-disc pl-5;
+    @apply list-disc pl-5 leading-relaxed;
+}
+
+.curriculum strong {
+    @apply font-semibold text-primary;
 }
 
 .glass {

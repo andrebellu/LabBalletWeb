@@ -26,12 +26,12 @@
     <div class="card-body items-center text-center px-4">
         <h3 class="card-title text-lg">{name}</h3>
         <p class="text-xs mt-2 line-clamp-3">{description}</p>
-        <!--         <a
-            class="btn btn-primary btn-sm mt-4"
+        <a
+            class=" btn btn-primary btn-sm mt-4"
             href={`/insegnanti/${slug}`}
             aria-label={`Vai alla pagina di ${name}`}
         >
             Curriculum
-        </a> -->
+        </a>
     </div>
 </div>

@@ -1,4 +1,6 @@
 <script>
+    import Footer from "$lib/components/Footer.svelte";
+
     let lang = "it";
 
     const policy = {
@@ -85,25 +87,33 @@
     }
 </script>
 
-<div class="max-w-3xl mx-auto p-6 font-sans leading-relaxed text-gray-800">
-    <div class="flex justify-end mb-6 space-x-2">
-        <button
-            class="btn px-4 py-2 disabled:opacity-50"
-            on:click={() => (lang = "it")}
-            disabled={lang === "it"}
-            aria-label="Switch to Italian"
-        >
-            Italiano
-        </button>
-        <button
-            class="btn px-4 py-2 disabled:opacity-50"
-            on:click={() => (lang = "en")}
-            disabled={lang === "en"}
-            aria-label="Switch to English"
-        >
-            English (US)
-        </button>
-    </div>
+<section class="bg-gray-50 min-h-screen pb-16">
+    <div class="max-w-3xl mx-auto px-4 pt-8 font-sans leading-relaxed text-gray-800">
+        <div class="flex justify-end mb-6 gap-2">
+            <button
+                class="btn-custom btn btn-sm"
+                on:click={() => (lang = "it")}
+                disabled={lang === "it"}
+                aria-label="Switch to Italian"
+            >
+                Italiano
+            </button>
+            <button
+                class="btn-custom btn btn-sm"
+                on:click={() => (lang = "en")}
+                disabled={lang === "en"}
+                aria-label="Switch to English"
+            >
+                English (US)
+            </button>
+        </div>
 
-    <section class="prose prose-lg" bind:this={policyContainer}></section>
-</div>
+        <div
+            class="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-10"
+        >
+            <div bind:this={policyContainer}></div>
+        </div>
+    </div>
+</section>
+
+<Footer />

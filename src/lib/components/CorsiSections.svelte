@@ -1,6 +1,6 @@
 <script>
     import { goto } from "$app/navigation";
-    import {reveal} from "$lib/actions/reveal.js";
+    import { reveal } from "$lib/actions/reveal.js";
 </script>
 
 <!-- Sezione Danza -->
@@ -23,7 +23,7 @@
                 età e livelli.
             </p>
             <button
-                class="btn btn-primary px-10 text-lg"
+                class=" btn btn-primary px-10 text-lg"
                 on:click={() => goto("/danza")}
             >
                 Vai ai corsi Danza
@@ -52,7 +52,7 @@
                 obiettivi.
             </p>
             <button
-                class="btn btn-primary px-10 text-lg"
+                class=" btn btn-primary px-10 text-lg"
                 on:click={() => goto("/fitness")}
             >
                 Vai ai corsi Fitness
@@ -78,7 +78,7 @@
             <h2 class="text-2xl md:text-5xl font-bold mb-6">Stage</h2>
             <p class="text-lg mb-8">Partecipa ai nostri stage!</p>
             <button
-                class="btn btn-primary px-10 text-lg"
+                class=" btn btn-primary px-10 text-lg"
                 on:click={() => goto("/stage")}
             >
                 Scopri gli Stage
