@@ -1,3 +1,4 @@
+import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import insegnanti from '$lib/data/insegnanti.json';
 
@@ -21,10 +22,7 @@ function slugify(text) {
 export async function load({ params }) {
     const insegnante = insegnanti.find(i => i.slug === params.slug);
     if (!insegnante) {
-        return {
-            status: 404,
-            error: new Error('Insegnante non trovato')
-        };
+        error(404, 'Insegnante non trovato');
     }
 
     let curriculumHTML = '';
