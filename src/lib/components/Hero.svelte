@@ -9,20 +9,20 @@
     });
 </script>
 
-<svelte:head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-        rel="preload"
-        as="style"
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
-    />
-</svelte:head>
-
 <div class="hero min-h-screen relative overflow-hidden">
     {#if Carousel}
         <Carousel />
     {:else}
-        <div class="w-full h-screen bg-gray-200"></div>
+        <div class="absolute inset-0 w-full h-full overflow-hidden bg-black blur-xs">
+            <img
+                src="/images/carosello/carosello_hercules.webp"
+                alt="LabBallet - Immagine 1"
+                width="1920"
+                height="1080"
+                fetchpriority="high"
+                class="w-full h-full object-cover"
+            />
+        </div>
     {/if}
 
     <div
@@ -64,12 +64,10 @@
         </div>
     </div>
 
-    <div
+    <a
+        href="#corsi"
+        aria-label="Scorri ai corsi"
         class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-50 cursor-pointer"
-        on:click={() =>
-            document
-                .getElementById("corsi")
-                .scrollIntoView({ behavior: "smooth" })}
     >
         <svg
             class="w-8 h-8 text-white opacity-80 hover:opacity-100 transition-opacity"
@@ -84,7 +82,7 @@
                 d="M19 14l-7 7m0 0l-7-7m7 7V3"
             />
         </svg>
-    </div>
+    </a>
 </div>
 
 <style>

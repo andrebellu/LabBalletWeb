@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import Hero from "$lib/components/Hero.svelte";
   import Footer from "$lib/components/Footer.svelte";
   import InsegnantiCard from "$lib/components/InsegnantiCard.svelte";
@@ -34,52 +35,13 @@
     return { destroy: () => io.disconnect() };
   }
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: "https://labballet.it/",
-      },
-    ],
-  };
+  let showSnow = false;
 
-  const organizationSchema = {
-    "@context": "https://schema.org",
-    "@type": "SportsActivityLocation",
-    name: "LABballet ASD",
-    description:
-      "Associazione di danza classica, moderna e fitness a Dello (BS)",
-    url: "https://labballet.it",
-    telephone: "+39-030-1234567",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Via Borgo Belvedere, 10",
-      addressLocality: "Dello",
-      addressRegion: "BS",
-      postalCode: "25020",
-      addressCountry: "IT",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 45.420184,
-      longitude: 10.082708,
-    },
-  };
+  onMount(() => {
+    const month = new Date().getMonth();
+    showSnow = month === 11 || month === 0 || month === 1;
+  });
 </script>
-
-<!-- <svelte:head>
-    <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-    </script>
-
-    <script type="application/ld+json">
-        {JSON.stringify(breadcrumbSchema)}
-    </script>
-</svelte:head> -->
 
 <Hero />
 
@@ -166,6 +128,6 @@
 
 <Footer />
 
-{#if new Date().getMonth() === 11 || new Date().getMonth() === 0 || new Date().getMonth() === 12 || new Date().getMonth() === 1}
+{#if showSnow}
   <AnimationFrameSnow />
 {/if}

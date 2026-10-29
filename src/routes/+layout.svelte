@@ -42,21 +42,28 @@
         },
     };
 
-    $: currentMeta = metaConfig[$page.url.pathname] || {
-        title: "LABballet ASD - Associazione di Danza e Fitness a Dello (BS)",
-        description:
-            "Associazione sportiva dilettantistica specializzata in corsi di danza e fitness per tutte le età a Dello, provincia di Brescia.",
-        canonical: "https://labballet.it" + $page.url.pathname,
-        ogImage: "/images/og-default.jpg",
+    const defaultOgImage = "https://labballet.it/images/og-default.jpg";
+
+    $: currentMeta = {
+        ogImage: defaultOgImage,
+        ...(metaConfig[$page.url.pathname] || {
+            title: "LABballet ASD - Associazione di Danza e Fitness a Dello (BS)",
+            description:
+                "Associazione sportiva dilettantistica specializzata in corsi di danza e fitness per tutte le età a Dello, provincia di Brescia.",
+            canonical: "https://labballet.it" + $page.url.pathname,
+        }),
     };
 
-    // Schema.org structured data
     const organizationSchema = {
         "@context": "https://schema.org",
-        "@type": "SportsOrganization",
+        "@type": ["DanceSchool", "SportsActivityLocation"],
         name: "LABballet ASD",
-        description: "Associazione sportiva dilettantistica di danza e fitness",
+        description: "Associazione sportiva dilettantistica di danza classica, moderna e fitness a Dello (BS)",
         url: "https://labballet.it",
+        logo: "https://labballet.it/images/logo.webp",
+        image: defaultOgImage,
+        email: "labballetasd@gmail.com",
+        telephone: "+39-347-0558313",
         address: {
             "@type": "PostalAddress",
             streetAddress: "Via Borgo Belvedere, 10",
@@ -65,23 +72,27 @@
             postalCode: "25020",
             addressCountry: "IT",
         },
-        telephone: "+39-347-0558313",
+        geo: {
+            "@type": "GeoCoordinates",
+            latitude: 45.420184,
+            longitude: 10.082708,
+        },
+        sameAs: [
+            "https://www.facebook.com/LABballet/",
+            "https://www.instagram.com/labballet/",
+        ],
     };
+
+    const jsonLd = `<script type="application/ld+json">${JSON.stringify(organizationSchema).replace(/</g, "\\u003c")}</${"script"}>`;
 </script>
 
 <svelte:head>
-    <!-- Primary Meta Tags -->
     <title>{currentMeta.title}</title>
     <meta name="description" content={currentMeta.description} />
-    <meta
-        name="keywords"
-        content="danza classica, danza moderna, fitness, ginnastica pilates, dello brescia, corsi danza bambini, associazione danza, labballet"
-    />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="author" content="LABballet ASD" />
     <link rel="canonical" href={currentMeta.canonical} />
 
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={currentMeta.canonical} />
     <meta property="og:title" content={currentMeta.title} />
@@ -92,61 +103,17 @@
     <meta property="og:locale" content="it_IT" />
     <meta property="og:site_name" content="LABballet ASD" />
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={currentMeta.title} />
     <meta name="twitter:description" content={currentMeta.description} />
     <meta name="twitter:image" content={currentMeta.ogImage} />
 
-    <!-- Structured Data -->
-    <!-- <script type="application/ld+json">
-        {JSON.stringify(organizationSchema)}
-    </script> -->
+    {@html jsonLd}
 
-    <!-- Preload critical resources -->
-    {#if $page.url.pathname === "/"}
-        <link
-            rel="preload"
-            as="image"
-            href="/images/carosello/carosello_hercules.webp"
-            fetchpriority="high"
-        />
-    {/if}
-
-    <!-- Font Preloading -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin="anonymous"
-    />
-    <link
-        rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        as="style"
-        on:load={(e) => {
-            e.target.onload = null;
-            e.target.rel = "stylesheet";
-        }}
-    />
-    <noscript
-        ><link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        /></noscript
-    >
-
-    <!-- PWA / Mobile -->
     <meta name="theme-color" content="#8B5CF6" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="format-detection" content="telephone=no" />
-
-    <!-- Geo tags -->
-    <meta name="geo.region" content="IT-BS" />
-    <meta name="geo.placename" content="Dello" />
-    <meta name="geo.position" content="45.4215;10.0766" />
-    <meta name="ICBM" content="45.4215, 10.0766" />
 </svelte:head>
 
 <div class="min-h-screen">

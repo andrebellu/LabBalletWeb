@@ -1,11 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "@fontsource/poppins/latin-300.css";
+@import "@fontsource/poppins/latin-400.css";
+@import "@fontsource/poppins/latin-500.css";
+@import "@fontsource/poppins/latin-600.css";
+@import "@fontsource/poppins/latin-700.css";
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "daisyui/theme" {
     name: "autumnCustom";
     default: true;
-    prefersdark: true;
-    color-scheme: "dark";
+    prefersdark: false;
+    color-scheme: "light";
     --color-base-100: oklch(95.814% 0 0);
     --color-base-200: oklch(89.107% 0 0);
     --color-base-300: oklch(82.4% 0 0);

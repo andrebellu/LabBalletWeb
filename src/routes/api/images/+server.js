@@ -1,46 +1,36 @@
+import { json } from '@sveltejs/kit';
 import { listR2Objects } from '$lib/server/r2';
+import { SAGGI } from '$lib/saggi.js';
+
+const CACHE_HEADERS = { 'Cache-Control': 'public, max-age=300, s-maxage=3600' };
 
 export async function GET({ url }) {
+    const page = Math.max(parseInt(url.searchParams.get('page') ?? '1', 10) || 1, 1);
+    const limit = Math.min(Math.max(parseInt(url.searchParams.get('limit') ?? '50', 10) || 50, 1), 100);
+    const year = url.searchParams.get('year');
+    const saggio = SAGGI.find((s) => s.year === year);
+
+    const empty = Object.fromEntries(SAGGI.map((s) => [`gruppo${s.year}`, []]));
+
+    if (!saggio) {
+        return json({ ...empty, totalPages: 1, totalCount: 0 }, { headers: CACHE_HEADERS });
+    }
+
     try {
-        const page = parseInt(url.searchParams.get("page") ?? "1", 10);
-        const limit = parseInt(url.searchParams.get("limit") ?? "50", 10);
-        const year = url.searchParams.get("year");
+        const { objects, totalCount } = await listR2Objects({ page, limit, prefix: saggio.prefix });
+        const urls = objects.map((obj) => `https://gallery.labballet.it/${obj.Key}`).sort();
 
-        let prefix = "";
-        if (year === "2024") prefix = "_MBP";
-        else if (year === "2025") prefix = "_C";
-        else if (year === "2026") prefix = "2026_";
-
-        const { objects, totalCount } = await listR2Objects({ page, limit, prefix });
-
-        if (!objects || objects.length === 0) {
-            return new Response(
-                JSON.stringify({
-                    gruppo2024: [], gruppo2025: [], gruppo2026: [],
-                    totalPages: 1, totalCount: 0
-                }),
-                { headers: { 'Content-Type': 'application/json' } }
-            );
-        }
-
-        let urls = objects.map(obj => `https://gallery.labballet.it/${obj.Key}`);
-        urls.sort();
-
-        return new Response(
-            JSON.stringify({
-                gruppo2024: year === "2024" ? urls : [],
-                gruppo2025: year === "2025" ? urls : [],
-                gruppo2026: year === "2026" ? urls : [],
-                totalPages: Math.ceil(totalCount / limit),
+        return json(
+            {
+                ...empty,
+                [`gruppo${saggio.year}`]: urls,
+                totalPages: Math.max(Math.ceil(totalCount / limit), 1),
                 totalCount
-            }),
-            { headers: { 'Content-Type': 'application/json' } }
+            },
+            { headers: CACHE_HEADERS }
         );
-    } catch (error) {
-        console.error("API Error:", error);
-        return new Response(JSON.stringify({ error: error.message }), {
-            status: 500,
-            headers: { 'Content-Type': 'application/json' }
-        });
+    } catch (err) {
+        console.error('API Error:', err);
+        return json({ error: 'Impossibile caricare le immagini' }, { status: 500 });
     }
 }

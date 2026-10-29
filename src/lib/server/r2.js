@@ -17,52 +17,62 @@ if (typeof globalThis.Node === 'undefined') {
     };
 }
 
-export async function listR2Objects({ page = 1, limit = 20, prefix }) {
-    if (!R2_BUCKET_NAME) {
-        throw new Error("R2_BUCKET_NAME is not defined");
+let client;
+
+function getClient() {
+    if (!client) {
+        client = new S3Client({
+            region: 'auto',
+            endpoint: `https://${CF_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+            credentials: {
+                accessKeyId: R2_ACCESS_KEY_ID,
+                secretAccessKey: R2_SECRET_ACCESS_KEY
+            }
+        });
+    }
+    return client;
+}
+
+const listCache = new Map();
+const LIST_TTL_MS = 10 * 60 * 1000;
+
+async function listAllKeys(prefix) {
+    const cacheKey = prefix ?? '';
+    const cached = listCache.get(cacheKey);
+    if (cached && Date.now() - cached.time < LIST_TTL_MS) {
+        return cached.keys;
     }
 
-    const client = new S3Client({
-        region: 'auto',
-        endpoint: `https://${CF_ACCOUNT_ID}.r2.cloudflarestorage.com`,
-        credentials: {
-            accessKeyId: R2_ACCESS_KEY_ID,
-            secretAccessKey: R2_SECRET_ACCESS_KEY
-        }
-    });
-
-    let allKeys = [];
-    let continuationToken = undefined;
+    let keys = [];
+    let continuationToken;
 
     do {
-        const commandParams = {
-            Bucket: R2_BUCKET_NAME,
-            ContinuationToken: continuationToken,
-        };
-
-        if (prefix) {
-            commandParams.Prefix = prefix;
-        }
-
-        const response = await client.send(new ListObjectsV2Command(commandParams));
-
-        if (response.Contents) {
-            allKeys = [...allKeys, ...response.Contents];
-        }
-
+        const response = await getClient().send(
+            new ListObjectsV2Command({
+                Bucket: R2_BUCKET_NAME,
+                ContinuationToken: continuationToken,
+                ...(prefix ? { Prefix: prefix } : {})
+            })
+        );
+        if (response.Contents) keys.push(...response.Contents);
         continuationToken = response.NextContinuationToken;
     } while (continuationToken);
 
-    const totalCount = allKeys.length;
+    keys.sort((a, b) => new Date(b.LastModified) - new Date(a.LastModified));
+    listCache.set(cacheKey, { keys, time: Date.now() });
+    return keys;
+}
 
-    allKeys.sort((a, b) => new Date(b.LastModified) - new Date(a.LastModified));
+export async function listR2Objects({ page = 1, limit = 20, prefix }) {
+    if (!R2_BUCKET_NAME) {
+        throw new Error('R2_BUCKET_NAME is not defined');
+    }
 
+    const keys = await listAllKeys(prefix);
     const start = (page - 1) * limit;
-    const end = start + limit;
-    const paginated = allKeys.slice(start, end);
 
     return {
-        objects: paginated,
-        totalCount
+        objects: keys.slice(start, start + limit),
+        totalCount: keys.length
     };
 }

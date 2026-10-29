@@ -1,6 +1,7 @@
 <a
     href="https://wa.me/+393470558313"
     target="_blank"
+    rel="noopener noreferrer"
     class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg z-200"
     aria-label="Contattaci su WhatsApp"
 >

@@ -39,6 +39,7 @@
             <a
               href="https://www.google.it/maps/place/..."
               target="_blank"
+              rel="noopener noreferrer"
               class="hover:text-accent"
             >
               Via Borgo Belvedere, 2
@@ -60,6 +61,7 @@
               href="https://www.facebook.com/LABballet/?locale=it_IT"
               class="hover:text-accent transition-transform duration-200 transform hover:scale-125"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Facebook"
             >
               <div class="w-8 h-8">
@@ -70,6 +72,7 @@
               href="https://www.instagram.com/labballet/?hl=it"
               class="hover:text-accent transition-transform duration-200 transform hover:scale-125"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
             >
               <div class="w-8 h-8">
