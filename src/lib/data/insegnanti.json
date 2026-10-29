@@ -22,11 +22,5 @@
         "name": "Myriam Zinco",
         "description": "Assistente all'insegnamento della danza",
         "photo": "/images/insegnanti/my.webp"
-    },
-    {
-        "slug": "daniela-carlotti",
-        "name": "Daniela Carlotti",
-        "description": "Insegnante di ginn. pilates miofasciale posturale",
-        "photo": "/images/insegnanti/dc.webp"
     }
 ]
